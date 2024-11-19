@@ -15,7 +15,10 @@
   <body>
     <header>
       <nav>
-        <ul>
+        <a class="toggle" onclick="showNav()"
+          ><i class="fa fa-bars" aria-hidden="true"></i
+        ></a>
+        <ul id="nav items">
           <li></li>
         </ul>
       </nav>
@@ -36,5 +39,11 @@
         </ul>
       </nav>
     </footer>
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
   </body>
 </html>
