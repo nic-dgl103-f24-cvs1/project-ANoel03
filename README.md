@@ -45,7 +45,7 @@ https://www.stephanierossauthor.com/
 ![SkinHealthWebsite Screenshot](SkinHealthWebsite.png) 
 https://lumaandleaf.com/
 
-![LoopsJewellery  Screenshot](LoopsJewellery .png) 
+![LoopsJewellery Screenshot](LoopsJewellery.png) 
 https://www.loopsjewellery.com/
 
 **Colours:** Are there any brand colours that you can use? List at least 3 colours that you plan to use in your redesign.
