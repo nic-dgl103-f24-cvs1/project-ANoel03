@@ -1,4 +1,5 @@
 /*-------- GLOBAL STYLES ---------*/
+
 * {
     box-sizing: border-box;
   }
@@ -15,7 +16,7 @@
     line-height: 1.5;
   }
 
-  /*-------- TYPOGRAPHY ---------*/
+/*-------- TYPOGRAPHY ---------*/
 
 h1 {
     font-size: 3.8rem;
@@ -40,3 +41,36 @@ h1 {
     font-size: 1.2rem;
     margin: 26px 0;
   }
+
+/*-------- UTILITY ---------*/
+
+.hero img {
+  width: 100%;
+}
+
+/*-------- HEADER ---------*/
+
+header img {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+}
+
+header nav .toggle {
+  align-self: flex-end;
+  cursor: pointer;
+  top: 32px;
+}
+
