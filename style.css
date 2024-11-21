@@ -141,3 +141,36 @@ section.hero {
   text-transform: capitalize;
   padding: 12px 48px;
 }
+
+.notice {
+  background-color: #163b30;
+  color: #ffffff;
+  border-radius: 4px;
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/*-------- ABOUT US ---------*/
+
+#about-us {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.content-container {
+  max-width: 50%;
+  padding-left: 20px;
+}
