@@ -16,6 +16,11 @@
     line-height: 1.5;
   }
 
+  a {color: #ffffff;
+  text-decoration: none;
+  text-transform: capitalize;
+  }
+
 /*-------- TYPOGRAPHY ---------*/
 
 h1 {
@@ -122,6 +127,7 @@ section.hero {
 .hero h1 {
   margin-top: 100px;
   margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .hero h2 {
@@ -136,9 +142,6 @@ section.hero {
 }
 
 .hero a {
-  color: #ffffff;
-  text-decoration: none;
-  text-transform: capitalize;
   padding: 12px 48px;
 }
 
@@ -147,8 +150,12 @@ section.hero {
   color: #ffffff;
   border-radius: 4px;
   text-align: center;
-  margin: 20px auto;
+  margin-bottom: 60px;
   padding: 20px;
+}
+
+.notice p {
+  margin: 0;
 }
 
 /*-------- ABOUT US ---------*/
@@ -161,9 +168,17 @@ section.hero {
 
 .about-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   justify-content: space-between;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding-right: 20px;
+  gap: 20px;
 }
 
 .image-container img {
@@ -171,6 +186,7 @@ section.hero {
 }
 
 .content-container {
-  max-width: 50%;
+  width: 100%;
   padding-left: 20px;
+  color: #2E2E2E;
 }
