@@ -16,7 +16,8 @@
     line-height: 1.5;
   }
 
-  a {color: #ffffff;
+  a {
+  color: #ffffff;
   text-decoration: none;
   text-transform: capitalize;
   }
@@ -43,7 +44,6 @@ h1 {
   }
   
   a.button {
-    text-transform: uppercase;
     border-radius: 4px;
     display: inline-block;
     text-decoration: none;
@@ -136,7 +136,7 @@ section.hero {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-.button {
+.hero .button {
   background-color: #af8645;
   border-radius: 4px;
 }
@@ -158,7 +158,7 @@ section.hero {
   margin: 0;
 }
 
-/*-------- ABOUT US ---------*/
+/*------ ABOUT US -------*/
 
 #about-us {
   display: flex;
@@ -189,4 +189,66 @@ section.hero {
   width: 100%;
   padding-left: 20px;
   color: #2E2E2E;
+}
+
+/*---- CALL-TO-ACTION ----*/
+
+.action-container {
+  background-color: #fee8dc;
+  color: #2E2E2E;
+  margin: 20px;
+  width: 100%;
+}
+
+.action-container img {
+  width: 100%;
+  max-height: 250px;
+}
+
+.action-container h2 {
+  color: #2E2E2E;
+}
+
+.button {
+  background-color: #163b30;
+  border-radius: 4px;
+}
+
+/*---- COMMUNITY AND EVENTS ----*/
+
+.community-events h2 h3 {
+  color:#2E2E2E;
+}
+
+.community-events img {
+  width: 100%;
+}
+
+/*---- FOOTER ----*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+footer nav {
+  margin-bottom: 20px;
+}
+
+footer nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer nav ul li a {
+  text-transform: uppercase;
+  color: #2E2E2E;
+}
+
+footer ul {
+  display: flex;
+  margin-bottom: 25px;
+  justify-content: space-around;
 }
