@@ -273,9 +273,10 @@ footer p {
 
 /*--- PRODUCT SELECTION ---*/
 
-h2 {
+.product-list h2 {
   text-align: center;
   margin-top: 20px;
+  color: #2E2E2E;
 }
 
 table {
@@ -295,7 +296,7 @@ tbody {
   background-color: #edece8;
 }
 
-.Category {
+.category {
   background-color: #cbc2b9;
 }
 
