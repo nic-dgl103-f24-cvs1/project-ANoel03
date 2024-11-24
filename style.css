@@ -53,11 +53,13 @@ h1 {
 
 /*-------- UTILITY ---------*/
 
-
+/*------------------------------------- SMALL DEVICES ---------------------------*/
+/*------------------------------------- HOMEPAGE --------------------------------*/
 /*-------- HEADER ---------*/
 
 .header-container {
   background-color: #163b30;
+  height: 15vh;
 }
 
 header {
@@ -145,19 +147,6 @@ section.hero {
 
 .hero a {
   padding: 12px 48px;
-}
-
-.notice {
-  background-color: #163b30;
-  color: #ffffff;
-  border-radius: 4px;
-  text-align: center;
-  margin-bottom: 60px;
-  padding: 20px;
-}
-
-.notice p {
-  margin: 0;
 }
 
 /*------ ABOUT US -------*/
@@ -279,3 +268,42 @@ footer p {
   margin: 5px 0;
   color: #ffffff;
 }
+
+/*------------------------------------- PRODUCE --------------------------------*/
+
+/*--- PRODUCT SELECTION ---*/
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th {
+  padding: 10px;
+  text-align: left;
+  border: solid 1px  #9b9a9a;
+  background-color: #fee8dc;
+}
+
+tbody {
+  background-color: #edece8;
+}
+
+.Category {
+  background-color: #cbc2b9;
+}
+
+td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid  #9b9a9a;
+}
+
+/*------------------------------------- CONTACT --------------------------------*/
+
