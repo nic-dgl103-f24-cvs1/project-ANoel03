@@ -56,6 +56,10 @@ h1 {
 
 /*-------- HEADER ---------*/
 
+.header-container {
+  background-color: #163b30;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -71,11 +75,6 @@ header img {
   width: 150px;
 }
 
-header nav {
-  display: flex;
-  flex-direction: column;
-}
-
 header nav .toggle {
   align-self: flex-end;
   cursor: pointer;
@@ -86,16 +85,19 @@ header nav .toggle {
 header nav ul {
   list-style-type: none;
   margin: 0;
-  display: none;
   padding: 6rem 0;
   width: 100%;
   top: 60px;  
   left: 0;
-  text-transform: uppercase;
+  background-color: #af8645;
 }
 
 header nav ul li {
   padding: 8px 0;
+}
+
+header nav ul li a {
+  text-transform: uppercase;
 }
 
 a.toggle {
@@ -226,6 +228,10 @@ section.hero {
 
 /*---- FOOTER ----*/
 
+.footer-container {
+  background-color: #163b30;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -244,11 +250,32 @@ footer nav ul {
 
 footer nav ul li a {
   text-transform: uppercase;
-  color: #2E2E2E;
+  color: #ffffff;
 }
 
 footer ul {
   display: flex;
   margin-bottom: 25px;
   justify-content: space-around;
+}
+
+footer ul li {
+  list-style-type: none;
+}
+
+footer ul li a img {
+  width: 20px;
+  height: 20px;
+}
+
+footer h4 {
+  text-align: center;
+  margin: 5px 0;
+  color: #ffffff;
+}
+
+footer p {
+  text-align: center;
+  margin: 5px 0;
+  color: #ffffff;
 }
