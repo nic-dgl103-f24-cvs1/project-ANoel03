@@ -331,3 +331,29 @@ td {
 
 /*------------------------------------- CONTACT --------------------------------*/
 
+/*--- CONTACT FORM ---*/
+
+.contact-form {
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #163b30;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input, .form-group textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #9b9a9a;
+}
+
+.btn-submit {
+  background-color: #af8645;
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+}
