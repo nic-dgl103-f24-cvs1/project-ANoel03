@@ -15,12 +15,18 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
   </head>
   <body>
     <!-- HEADER -->
 
     <header class="header-container">
-      <img src="images/kehlerveggies.png" alt="Kehler Logo" />
+      <img src="images/kehlerlogo.png" alt="Kehler Logo" />
       <nav>
         <a class="toggle" onclick="showNav()"
           ><i class="fa fa-bars" aria-hidden="true"></i
@@ -36,10 +42,13 @@
       <!-- HERO -->
 
       <section class="hero">
-        <!-- large background image with text overlay -->
+        <video autoplay muted loop width="800">
+          <source src="images/veggies-video.mp4" type="video/mp4" />
+          <source src="images/veggies-video.webm" type="video/webm" />
+          <source src="images/veggies-video.ogg" type="video/ogg" />
+        </video>
         <h1>kehler vegetable company</h1>
         <h2>i'm so glad you stopped by!</h2>
-        <a class="button" href="produce.html">browse our selection</a>
       </section>
 
       <!-- ABOUT THE FARM -->
@@ -178,11 +187,5 @@
       </p>
       <p>&copy; 2018 Kehler Vegetable Company. All rights reserved.</p>
     </footer>
-    <script>
-      function showNav() {
-        var element = document.getElementById("nav-items");
-        element.classList.toggle("show-items");
-      }
-    </script>
   </body>
 </html>

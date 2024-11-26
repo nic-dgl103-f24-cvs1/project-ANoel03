@@ -89,9 +89,10 @@ header nav ul {
   margin: 0;
   padding: 6rem 0;
   width: 100%;
-  top: 60px;  
+  top: 100px;  
   left: 0;
   background-color: #af8645;
+  position: absolute;
 }
 
 header nav ul li {
@@ -107,7 +108,11 @@ a.toggle {
   padding: 0 34px;
 }
 
-.show-items {
+.header-container ul {
+ display: none;
+}
+
+.header-container .show-items {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -117,7 +122,7 @@ a.toggle {
 /*-------- HERO ---------*/
 
 section.hero {
-  background-image: url("images/heroimage.jpg");
+ /*-- background-image: url("images/heroimage.jpg");--*/
   background-size: 100%;
   background-repeat: no-repeat;
   display: flex;
@@ -348,6 +353,11 @@ td {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #9b9a9a;
+  color: #163b30;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+  outline: 3px solid #163b30;
 }
 
 .btn-submit {
@@ -356,4 +366,14 @@ td {
   padding: 12px 20px;
   border: none;
   border-radius: 5px;
+}
+
+.farm-location p {
+  text-align: center;
+  line-height: 1rem;
+}
+
+.farm-location a {
+  color: #2E2E2E;
+  text-align: center;
 }
