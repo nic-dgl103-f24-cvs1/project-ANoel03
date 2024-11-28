@@ -39,6 +39,7 @@ h2, h3, h4{
     font-family: "Playfair Display", "Open Sans";
     color: #ffffff;
     text-transform: capitalize;
+    font-size: 3.7rem;
   }
 
   a {
@@ -125,22 +126,35 @@ a.toggle {
 
 /*-------- HERO ---------*/
 
-section.hero {
+.hero {
   background-image: url("images/marketveggies.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
   height: 100vh;
   padding: 20px;
+  position: relative;
 }
 
 .hero video {
   position: absolute;
   top: 113px;
   width: 100%;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+
 }
 
 .hero h1 {
@@ -172,9 +186,10 @@ section.hero {
   color: #ffffff;
   max-width: 900px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  z-index: 1;
 }
 
-/*------ ABOUT US -------*/
+/*------ ABOUT THE FARM ------*/
 
 #about-us {
   display: flex;
@@ -206,6 +221,7 @@ section.hero {
   padding-left: 20px;
   color: #2E2E2E;
 }
+
 
 /*---- CALL-TO-ACTION ----*/
 
@@ -299,6 +315,12 @@ footer p {
 
 /*--- PRODUCT SELECTION ---*/
 
+.product-list {
+  background-color: #f1eeeb;
+  padding: 6rem;
+}
+
+
 .product-list h2 {
   text-align: center;
   margin-top: 20px;
@@ -314,8 +336,8 @@ table {
 th {
   padding: 10px;
   text-align: left;
-  border: solid 1px  #9b9a9a;
-  background-color: #af8645;
+  border: solid 2px  #9b9a9a;
+  background-color: #fee8dc;
 }
 
 tbody {
@@ -329,7 +351,7 @@ tbody {
 td {
   padding: 10px;
   text-align: left;
-  border: 1px solid  #9b9a9a;
+  border: 2px solid  #9b9a9a;
 }
 
 .notice {
@@ -351,8 +373,24 @@ td {
 
 /*--- BENEFITS ---*/
 
+.benefits {
+  text-align: center;
+  margin: 63px 97px 0 97px;
+}
+
 .benefits h2 {
   color: #2E2E2E;
+}
+
+.benefits p {
+  font-size: 1.6rem;
+}
+
+.benefits .button {
+  display: flex;
+  margin: 52px 0 55px 550px;
+  padding: 12px 0 12px 38px;
+  width: 200px;
 }
 
 /*------------------------------------- CONTACT --------------------------------*/
