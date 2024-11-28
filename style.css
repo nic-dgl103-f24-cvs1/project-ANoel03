@@ -2,6 +2,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
   
   html {
@@ -21,6 +23,23 @@
   text-decoration: none;
   text-transform: capitalize;
   }
+
+.homepage-hero a.button, .produce-hero a.button, .contact-hero a.button {
+  background-color: #163b30;
+}
+
+.produce-hero, .contact-hero {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 100vh;
+  padding: 20px;
+  position: relative;
+}
 
 /*-------- TYPOGRAPHY ---------*/
 
@@ -47,6 +66,7 @@ h2, h3, h4{
     padding: 12px 48px;
   }
   
+  
   a.button {
     border-radius: 4px;
     display: inline-block;
@@ -65,9 +85,6 @@ h2, h3, h4{
   background-color: #163b30;
   height: 15vh;
   z-index: 11;
-}
-
-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -76,20 +93,20 @@ header {
   padding: 10px 20px;
 }
 
-header img {
+.header-container img {
   margin-top: 10px;
   margin-left: 20px;
-  width: 150px;
+  width: 60px;
 }
 
-header nav .toggle {
+.header-container nav .toggle {
   align-self: flex-end;
   cursor: pointer;
   top: 32px;
   font-size: 30px;
 }
 
-header nav ul {
+.header-container nav ul {
   list-style-type: none;
   margin: 0;
   padding: 6rem 0;
@@ -100,11 +117,11 @@ header nav ul {
   position: absolute;
 }
 
-header nav ul li {
+.header-container nav ul li {
   padding: 8px 0;
 }
 
-header nav ul li a {
+.header-container nav ul li a {
   text-transform: uppercase;
 }
 
@@ -126,27 +143,30 @@ a.toggle {
 
 /*-------- HERO ---------*/
 
-.hero {
-  background-image: url("images/marketveggies.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
+/*---stylings for homepage hero---*/
+
+.homepage-hero {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-  padding: 20px;
-  position: relative;
+  text-align: center;
+  padding: 0 20px;
 }
 
-.hero video {
+.homepage-hero video {
   position: absolute;
-  top: 113px;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
 }
 
-.hero::before {
+.homepage-hero::before {
   content: "";
   position: absolute;
   top: 0;
@@ -157,36 +177,27 @@ a.toggle {
 
 }
 
-.hero h1 {
+.homepage-hero h1 {
   margin-bottom: 10px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
   z-index: 1;
-  text-transform: capitalize;
-  font-size: 7rem;
+  font-size: 4rem;
 }
 
-.hero h2 {
+.homepage-hero h2 {
   text-transform: capitalize;
-  margin: 0;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  font-size: 1.8rem;
+}
+
+.homepage-hero a.button {
+  padding: 12px 30px;
   z-index: 1;
 }
 
-.hero .button {
-  background-color: #af8645;
-  border-radius: 4px;
-}
-
-.hero a {
+.homepage-hero a {
   padding: 12px 48px;
-  z-index: 1;
-}
-
-.hero p {
-  font-size: 2rem;
-  color: #ffffff;
-  max-width: 900px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
   z-index: 1;
 }
 
@@ -223,6 +234,12 @@ a.toggle {
   color: #2E2E2E;
 }
 
+.content-container a.button {
+  font-size: 1.4rem ;
+  margin-top: 20px;
+  padding: 12px 30px;
+  text-align: center;
+}
 
 /*---- CALL-TO-ACTION ----*/
 
@@ -243,15 +260,27 @@ a.toggle {
   color: #2E2E2E;
 }
 
-.button {
+.action-container a.button {
   background-color: #163b30;
   border-radius: 4px;
+  font-size: 1.4rem ;
+  margin-top: 20px;
+  padding: 12px 30px;
+  text-align: center;
 }
 
 /*---- COMMUNITY AND EVENTS ----*/
 
+.community-events h2 {
+  font-size: 2.5rem;
+}
+
 .community-events h2, .community-events h3 {
   color:#2E2E2E;
+}
+
+.community-events h3 {
+  font-size: 1.7rem;
 }
 
 .community-events img {
@@ -262,51 +291,47 @@ a.toggle {
 
 .footer-container {
   background-color: #163b30;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
   padding: 20px;
 }
 
-footer nav {
-  margin-bottom: 20px;
-}
-
-footer nav ul {
-  list-style-type: none;
+.footer-container nav ul {
   margin: 0;
   padding: 0;
 }
 
-footer nav ul li a {
+.footer-container nav ul li a {
   text-transform: uppercase;
   color: #ffffff;
 }
 
-footer ul {
+.footer-container ul {
   display: flex;
   margin-bottom: 25px;
-  justify-content: space-around;
-}
-
-footer ul li {
+  justify-content: center;
   list-style-type: none;
+  margin-top: 20px;
 }
 
-footer ul li a img {
+.footer-container ul li {
+  margin-right: 15px;
+}
+
+.footer-container ul li a {
+  font-size: 1.8rem;
+}
+
+.footer-container ul li a img {
   width: 20px;
   height: 20px;
 }
 
-footer h4 {
+.footer-container h4 {
   text-align: center;
   margin: 5px 0;
   color: #ffffff;
 }
 
-footer p {
+.footer-container p {
   text-align: center;
   margin: 5px 0;
   color: #ffffff;
@@ -314,6 +339,43 @@ footer p {
 
 /*------------------------------------- PRODUCE --------------------------------*/
 
+/*---- HERO ----*/
+
+.produce-hero {
+  background-image: url("images/marketveggies.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  text-align: center;
+}
+
+.produce-hero h1 {
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.produce-hero p {
+  color: #ffffff;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.produce-hero a.button {
+  font-size: 1.4rem ;
+  margin-top: 20px;
+  padding: 12px 30px;
+  text-align: center;
+}
 
 /*--- PRODUCT SELECTION ---*/
 
@@ -322,17 +384,16 @@ footer p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 13rem;
-  margin: 0;
+  padding: 30px 10px;
 }
 
 .product-list-container {
-  background-color: #f1eeeb;
-  padding: 20px 45px;
+  background-color: #f1eeeb; 
+  padding: 20px 15px;
 }
 
 .product-list h2 {
-  text-align: left;
+  font-size: 2.5rem;
 }
 
 .product-list h2, .product-list h3 {
@@ -349,7 +410,7 @@ footer p {
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: 52px 0;
+  margin: 20px 0;
 }
 
 th {
@@ -357,6 +418,7 @@ th {
   text-align: left;
   border: solid 2px  #9b9a9a;
   background-color: #fee8dc;
+  font-size: 1.4rem;
 }
 
 tbody {
@@ -378,8 +440,8 @@ td {
   color: #2E2E2E;
   border-radius: 4px;
   text-align: center;
-  margin-bottom: 60px;
-  padding: 35px 87px 15px 180px;
+  margin-bottom: 30px;
+  padding: 20px;
 }
 
 .notice h2 {
@@ -388,17 +450,20 @@ td {
 
 .notice p {
   margin: 0;
+  font-size:  1.4rem;
 }
 
 /*--- BENEFITS ---*/
 
 .benefits {
   text-align: center;
-  margin: 63px 97px 0 97px;
+  margin: 30px auto;
+  padding: 0 15px;
 }
 
 .benefits h2 {
   color: #2E2E2E;
+  font-size: 2.5rem;
 }
 
 .benefits p {
@@ -407,18 +472,54 @@ td {
 
 .benefits .button {
   display: flex;
-  margin: 52px 0 55px 550px;
-  padding: 12px 0 12px 38px;
+  margin: 30px auto;
+  padding: 10px 17px;
   width: 200px;
+  border-radius: 4px;
 }
 
 .benefits img {
-  width: 900px;
+  width: 400px;
+  height: auto;
+  margin-top: 20px;
 }
 
+.footer-container ul {
+  display: flex;
+  margin-bottom: 25px;
+  justify-content: center;
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.footer-container ul li {
+  margin-right: 15px;
+}
 /*------------------------------------- CONTACT --------------------------------*/
 
-/*--- CONTACT FORM ---*/
+/*--- HERO ---*/
+
+.contact-hero {
+  background-image: url("images/farm_view.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  position: relative;
+  font-size: 2rem;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-hero h1 {
+  text-transform: capitalize;
+}
 
 .contact-form {
   margin: 20px auto;
@@ -459,3 +560,5 @@ td {
   color: #2E2E2E;
   text-align: center;
 }
+
+
