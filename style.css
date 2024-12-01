@@ -77,6 +77,12 @@ h2, h3, h4{
 
 /*-------- UTILITY ---------*/
 
+.content-width {
+  width: 334px;
+  height: 700px;
+  margin: auto;
+}
+
 /*------------------------------------- SMALL DEVICES ---------------------------*/
 /*------------------------------------- HOMEPAGE --------------------------------*/
 /*-------- HEADER ---------*/
@@ -94,9 +100,9 @@ h2, h3, h4{
 }
 
 .header-container img {
-  margin-top: 10px;
+  margin-top: 0;
   margin-left: 20px;
-  width: 60px;
+  width: 43px;
 }
 
 .header-container nav .toggle {
@@ -109,7 +115,7 @@ h2, h3, h4{
 .header-container nav ul {
   list-style-type: none;
   margin: 0;
-  padding: 6rem 0;
+  padding: 60px 0;
   width: 100%;
   top: 100px;  
   left: 0;
@@ -138,7 +144,9 @@ a.toggle {
   display: flex;
   flex-direction: column;
   position: absolute;
-  align-items: center;
+  top: 50px;
+  text-align: center;
+  padding-right: 45px;
 }
 
 /*-------- HERO ---------*/
@@ -146,24 +154,27 @@ a.toggle {
 /*---stylings for homepage hero---*/
 
 .homepage-hero {
-  position: relative;
+  position: absolute;
+  top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  text-align: center;
-  padding: 0 20px;
+  text-align: end;
+  padding: 0 60px;
 }
 
 .homepage-hero video {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 20px;
+  max-width: 87%;
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: 1;
+  display: flex;
 }
 
 .homepage-hero::before {
@@ -182,6 +193,8 @@ a.toggle {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
   z-index: 1;
   font-size: 4rem;
+  padding: 0 25px;
+  margin-top: 105px;
 }
 
 .homepage-hero h2 {
@@ -189,11 +202,15 @@ a.toggle {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
   z-index: 1;
   font-size: 1.8rem;
+  padding-top: 13px;
+  padding-left: 125px;
 }
 
 .homepage-hero a.button {
   padding: 12px 30px;
   z-index: 1;
+  margin-top: 17px;
+  margin-left: 165px;
 }
 
 .homepage-hero a {
@@ -343,38 +360,40 @@ a.toggle {
 
 .produce-hero {
   background-image: url("images/marketveggies.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  background-size: cover;
+  background-position: center 48px;
+  padding-top: 64px;
   justify-content: center;
-  height: 100vh;
-  padding: 0;
-  margin: 0;
-  position: relative;
   text-align: center;
+  background-color: #ffffff;
+}
+
+.content-width {
 }
 
 .produce-hero h1 {
   text-transform: capitalize;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  line-height: 3.5rem;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  margin-bottom: 11px;
+  padding-right: 17px;
 }
 
 .produce-hero p {
   color: #ffffff;
-  font-size: 1.4rem;
-  line-height: 1.8rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  width: 100%;
+  margin-right: 13px;
 }
 
 .produce-hero a.button {
-  font-size: 1.4rem ;
-  margin-top: 20px;
-  padding: 12px 30px;
-  text-align: center;
+  font-size: 1.3rem ;
+  padding: 10px 20px;
+  margin: 15px 0 21px 0;
 }
 
 /*--- PRODUCT SELECTION ---*/
@@ -383,34 +402,32 @@ a.toggle {
   background-image: url("images/leaf_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  padding: 30px 10px;
+  background-position: top center;
+  width: 417px;
+  padding: 20px;
 }
 
 .product-list-container {
   background-color: #f1eeeb; 
-  padding: 20px 15px;
+  padding: 0 12px 50px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 90%;
+  margin: 18px 0 37px 18px;
+  border-radius: 4px;
 }
 
 .product-list h2 {
-  font-size: 2.5rem;
-}
-
-.product-list h2, .product-list h3 {
+  font-size: 2.7rem;
   margin-top: 20px;
   color: #2E2E2E;
-  font-size: 4.2rem;
   padding-right: 0;
-}
-
-.product-list h3 {
   text-align: center;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: 20px 0;
 }
 
 th {
@@ -418,7 +435,7 @@ th {
   text-align: left;
   border: solid 2px  #9b9a9a;
   background-color: #fee8dc;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
 }
 
 tbody {
@@ -433,6 +450,7 @@ td {
   padding: 10px;
   text-align: left;
   border: 2px solid  #9b9a9a;
+  font-size: 1.4rem;
 }
 
 .notice {
@@ -440,11 +458,12 @@ td {
   color: #2E2E2E;
   border-radius: 4px;
   text-align: center;
-  margin-bottom: 30px;
-  padding: 20px;
+  padding: 5px 19px 35px 20px;
+  margin: 10px 10px 23px 18px;
+  width: 90%;
 }
 
-.notice h2 {
+.notice h3 {
   color:#2E2E2E;
 }
 
@@ -479,9 +498,10 @@ td {
 }
 
 .benefits img {
+  display: block;
   width: 400px;
   height: auto;
-  margin-top: 20px;
+  margin: 0 18px 20px;
 }
 
 /*--- FOOTER ---*/
