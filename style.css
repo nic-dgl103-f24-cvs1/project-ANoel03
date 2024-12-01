@@ -326,21 +326,32 @@ a.toggle {
 .footer-container {
   background-color: #163b30;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-container nav ul {
-  margin: 0;
+  margin-left: 60px;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-container nav ul li {
   width: 122px;
-  padding-right: 0;
+  margin-right: 61px;
+}
+
+.footer-container nav ul li:first-child {
+  padding: 3px 15px 4px 14px;
 }
 
 .footer-container nav ul li a {
   text-transform: uppercase;
   color: #ffffff;
+  padding: 11px 15px;
 }
 
 .footer-container ul {
@@ -352,6 +363,7 @@ a.toggle {
 }
 
 .footer-container ul li {
+  margin-right: 15px;
 }
 
 .footer-container ul li a {
@@ -533,24 +545,6 @@ td {
   margin-top: 6px 18px 6px 16px;
 }
 
-/*--- FOOTER ---*/
-
-.footer-container {
-  background-color: #163b30;
-  padding: 20px;
-}
-
-.footer-container ul {
-  display: flex;
-  margin-bottom: 25px;
-  justify-content: center;
-  list-style-type: none;
-  margin-top: 20px;
-}
-
-.footer-container ul li {
-  margin-right: 15px;
-}
 /*------------------------------------- CONTACT --------------------------------*/
 
 /*--- HERO ---*/
@@ -587,6 +581,7 @@ td {
 }
 
 .contact-form h1 {
+  text-transform: capitalize;
   text-align: center;
   margin-top: 2px;
   margin-bottom: 18px;
@@ -625,14 +620,33 @@ td {
   margin-left: 124px;
 }
 
+/*--- FARM LOCATION ---*/
+
+.farm-location h2 {
+  color: #163b30;
+  margin: 37px 0 15px 95px;
+}
+
 .farm-location p {
   text-align: center;
-  line-height: 1rem;
+  line-height: 1.5rem;
+  font-size: 1.5rem;
+  margin: 0 41px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  color: #163b30;
 }
 
 .farm-location a {
-  color: #2E2E2E;
+  color: #163b30;
   text-align: center;
 }
 
+.map-container iframe {
+  width: 100%;
+  max-width: 425px;
+  height: 400px;
+  margin-top: 25px;
+}
 
