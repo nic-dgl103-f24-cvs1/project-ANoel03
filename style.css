@@ -120,7 +120,7 @@ h2, h3, h4{
   width: 100%;
   top: 100px;  
   left: 0;
-  background-color: #af8645;
+  background-color: #c5954a;
   position: absolute;
 }
 
@@ -240,7 +240,7 @@ a.toggle {
 
 .content-container h2 {
   font-size: 2.7rem;
-  color: #af8645;
+  color: #c5954a;
   padding-top: 30px;
   padding-left: 114px;
 }
@@ -253,7 +253,7 @@ a.toggle {
   font-size: 1.4rem ;
   padding: 12px 20px;
   margin: 20px 0 10px 83px;
-  background-color: #af8645;
+  background-color: #c5954a;
 }
 
 /*---- CALL-TO-ACTION ----*/
@@ -313,7 +313,7 @@ a.toggle {
   display: inline-block;
   font-size: 1.3rem;
   margin: 26px 139px;
-  background-color: #af8645;
+  background-color: #c5954a;
   padding: 10px 15px;
 }
 
@@ -442,6 +442,7 @@ a.toggle {
 .product-list h2 {
   font-size: 2.7rem;
   margin-top: 20px;
+  margin-bottom: 20px;
   color: #2E2E2E;
   padding-right: 0;
   text-align: center;
@@ -487,11 +488,13 @@ td {
 
 .notice h3 {
   color:#2E2E2E;
+  font-size: 1.9rem;
+  margin: 20px 0;
 }
 
 .notice p {
   margin: 0;
-  font-size:  1.4rem;
+  font-size: 1.4rem;
 }
 
 /*--- BENEFITS ---*/
@@ -507,6 +510,7 @@ td {
   font-size: 2.7rem;
   padding-right: 31px;
   padding-left: 31px;
+  margin-top: 20px;
 }
 
 .benefits p {
@@ -517,9 +521,8 @@ td {
 
 .benefits .button {
   display: flex;
-  margin: 16px 0 3px 70px;
-  padding: 10px 10px 10px 41px;
-  width: 200px;
+  margin: 15px 76px 30px 67px;
+  padding: 10px 29px 10px 34px;
   color: #ffffff;
   background-color: #c5954a;
   border-radius: 4px;
@@ -527,7 +530,7 @@ td {
 
 .benefits img {
   width: 355px;
-  margin-top: 10px 18px 10px;
+  margin-top: 6px 18px 6px 16px;
 }
 
 /*--- FOOTER ---*/
@@ -554,35 +557,51 @@ td {
 
 .contact-hero {
   background-image: url("images/farm_view.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-  position: relative;
-  font-size: 2rem;
+  background-size: cover;
+  background-position: center 48px;
   color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  height: 100vh;
   text-align: center;
   justify-content: center;
-  padding: 0;
-  margin: 0;
+  padding-top: 60px;
 }
 
 .contact-hero h1 {
   text-transform: capitalize;
+  margin-top: 10px;
+  padding: 0 43px 0 49px;
 }
 
+.contact-hero p {
+  font-size: 1.5rem;
+  margin-top: 29px;
+  padding: 0 43px;
+}
+
+/*--- CONTACT FORM ---*/
+
 .contact-form {
-  margin: 20px auto;
+  margin-left: 0;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 4px;
   background-color: #163b30;
+}
+
+.contact-form h1 {
+  text-align: center;
+  margin-top: 2px;
+  margin-bottom: 18px;
+}
+
+.contact-form img {
+  margin: 12px 0 0 12px;
+  padding: 0;
+  max-width: 350px;
 }
 
 .form-group {
   margin-bottom: 20px;
+  margin-top: 29px;
+  text-align: center;
 }
 
 .form-group input, .form-group textarea {
@@ -597,11 +616,13 @@ td {
 }
 
 .btn-submit {
-  background-color: #af8645;
+  background-color: #c5954a;
   color: #ffffff;
   padding: 12px 20px;
-  border: none;
+  border: solid 2px #6b5128;
   border-radius: 5px;
+  margin-bottom: 4px;
+  margin-left: 124px;
 }
 
 .farm-location p {
