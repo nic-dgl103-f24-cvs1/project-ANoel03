@@ -83,7 +83,7 @@ h2, h3, h4{
   margin: auto;
 }
 
-/*------------------------------------- SMALL DEVICES ---------------------------*/
+/*--------------------------SMALL DEVICES (mobile max 768px) ---------------------------*/
 /*------------------------------------- HOMEPAGE --------------------------------*/
 /*-------- HEADER ---------*/
 
@@ -650,3 +650,111 @@ td {
   margin-top: 25px;
 }
 
+/*----------------------LARGE DEVICES (desktops, 768px and up) ---------------------------*/
+@media only screen and (min-width: 768px) {
+  
+/*------------------------------------- HOMEPAGE --------------------------------*/
+/*-------- HEADER ---------*/
+
+.header-container nav .toggle {
+  display: none;
+}
+
+.header-container nav ul {
+  display: flex;
+}
+
+/*-------- HOMEPAGE HERO ---------*/
+
+.homepage-hero video {
+  width: 100%;
+  max-width: 1500px;
+  margin-top: 517px;
+}
+
+.homepage-hero h1 {
+  font-size: 7rem;
+  position: absolute;
+  top: 230px;
+}
+
+.homepage-hero h2 {
+  font-size: 4rem;
+  position: absolute;
+  top: 450px;
+}
+
+.homepage-hero a.button {
+  font-size: 2rem;
+  position: absolute;
+  top: 600px;
+}
+/*-------- ABOUT THE FARM ---------*/
+
+.about-container {
+  margin-top: 550px;
+  margin-bottom: 45px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.image-container {
+  flex: 1;
+}
+
+.image-container img {
+  max-width: 800px;
+  height: auto;
+  max-height: 1500px;
+}
+
+.content-container {
+  flex: 1;
+  margin-top: 372px;
+  margin-right: 270px;
+}
+
+.content-container h2 {
+  font-size: 4rem;
+  padding-top: 25px;
+  padding-left: 190px;
+}
+
+.content-container p {
+  font-size: 2.2rem;
+}
+
+.content-container a.button {
+  padding: 12px 0 12px 55px;
+  margin-top: 27px;
+  margin-left: 115px;
+  width: 314px;
+  font-size: 2rem;
+}
+
+/*-------- CALL-TO-ACTION ---------*/
+
+/*-------- COMMUNITY EVENTS ---------*/
+
+/*-------- FOOTER ---------*/
+
+
+
+/*-------- PRODUCE HERO ---------*/
+
+/*-------- PRODUCT SELECTION ---------*/
+
+/*-------- BENEFITS ---------*/
+
+
+
+/*-------- CONTACT HERO ---------*/
+
+/*-------- CONTACT FORM ---------*/
+
+/*-------- FARM LOCATION ---------*/
+
+
+
+}
