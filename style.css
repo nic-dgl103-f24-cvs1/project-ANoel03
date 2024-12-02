@@ -152,6 +152,16 @@ a.toggle {
 }
 
 .homepage-hero video {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.homepage-hero video {
   width: 100%;
  
 }
@@ -190,49 +200,31 @@ a.toggle {
 /*------ ABOUT THE FARM ------*/
 
 .about-container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: space-between;
   margin: 20px;
-}
-
-.image-container {
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
-  padding-right: 20px;
-  gap: 20px;
-  background-color: #ffffff;
 }
 
 .image-container img {
   width: 100%;
-  max-width: 332px;
-  padding-top: 405px;
-  padding-left: 50px;
 }
 
 .content-container {
   width: 100%;
-  padding-left: 20px;
+  text-align: center;
 }
 
 .content-container h2 {
   font-size: 2.7rem;
   color: #c5954a;
   padding-top: 30px;
-  padding-left: 114px;
 }
 
 .content-container p {
-  padding: 15px 65px 0 20px;
+  padding-top: 16px;
 }
 
 .content-container a.button {
   font-size: 1.4rem ;
   padding: 12px 20px;
-  margin: 20px 0 10px 83px;
   background-color: #c5954a;
 }
 
@@ -242,23 +234,18 @@ a.toggle {
   background-color: #fee8dc;
   margin: 0;
   width: 100%;
+  text-align: center;
 }
 
 .action-container img {
   width: 100%;
-  max-height: 380px;
   padding: 40px 35px 0 50px;
 }
 
 .action-container h2 {
   color: #163b30;
-  padding-left: 76px;
   padding-top: 30px;
   font-size: 2.7rem;
-}
-
-.action-container p {
-  padding: 15px 36px 0 43px;
 }
 
 .action-container a.button {
@@ -266,16 +253,18 @@ a.toggle {
   border-radius: 4px;
   font-size: 1.3rem ;
   margin-top: 25px;
-  margin-left: 120px;
   padding: 10px 20px;
 }
 
 /*---- COMMUNITY AND EVENTS ----*/
 
+.community-events {
+  text-align: center;
+}
+
 .community-events h2 {
   font-size: 2.7rem;
   color: #163b30;
-  padding-left: 60px;
   margin-top: 35px;
 }
 
@@ -292,7 +281,6 @@ a.toggle {
   border-radius: 4px;
   display: inline-block;
   font-size: 1.3rem;
-  margin: 26px 139px;
   background-color: #c5954a;
   padding: 10px 15px;
 }
@@ -374,6 +362,7 @@ a.toggle {
 
 .produce-hero {
   background-image: url("images/marketveggies.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center 48px;
   padding-top: 64px;
@@ -532,6 +521,7 @@ td {
 .contact-hero {
   background-image: url("images/farm_view.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center 48px;
   color: #ffffff;
   text-align: center;
@@ -560,7 +550,7 @@ td {
   background-color: #163b30;
 }
 
-.contact-form h1 {
+.contact-form h2 {
   text-transform: capitalize;
   text-align: center;
   margin-top: 2px;
@@ -686,34 +676,30 @@ position: static;
   padding: 12px 30px;
 }
 
+.action-container p {
+  padding: 0 20px;
+}
+
+.action-container img {
+  width: 60%;
+}
+
 /*-------- ABOUT THE FARM ---------*/
 
 .about-container {
+  display: flex;
   align-items: center;
   padding: 50px 20px;
   margin: 0;
-}
-
-.image-container {
-  flex: 1;
-}
-
-.image-container img {
-  max-width: 800px;
-  height: auto;
-  max-height: 1500px;
+  flex-direction: row;
 }
 
 .content-container {
-  flex: 1;
-  margin-top: 372px;
-  margin-right: 270px;
+  padding: 20px;
 }
 
 .content-container h2 {
   font-size: 4rem;
-  padding-top: 25px;
-  padding-left: 190px;
 }
 
 .content-container p {
@@ -723,7 +709,6 @@ position: static;
 .content-container a.button {
   padding: 12px 0 12px 55px;
   margin-top: 27px;
-  margin-left: 115px;
   width: 314px;
   font-size: 2rem;
 }
@@ -739,9 +724,17 @@ position: static;
 
 /*-------- PRODUCE HERO ---------*/
 
-.produce-hero {
-margin: 60px 0 8px 62px;
-padding: 5px 0 10px 49px;
+.produce-hero h1 {
+  font-size: 7rem;
+  white-space: nowrap;
+  padding-top: 200px;
+}
+
+.produce-hero p {
+  font-size: 2.2rem;
+  width: 900px;
+  padding-top: 120px;
+  line-height: 27px;
 }
 
 /*-------- PRODUCT SELECTION ---------*/
@@ -826,10 +819,79 @@ td {
 
 /*-------- CONTACT HERO ---------*/
 
+.contact-hero {
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 80px 100px;
+  height: 100vh;
+}
+
+.contact-hero h1 {
+  font-size: 7rem;
+  white-space: nowrap;
+}
+
+.contact-hero p {
+  font-size: 2.2rem;
+}
+
+.community-events {
+ display: flex;
+}
+
+.community-events div {
+  width: 50%;
+}
+
+.community-events img {
+  width: 50%;
+}
+
 /*-------- CONTACT FORM ---------*/
+
+.contact-form {
+  display: flex;
+  justify-self: flex-start;
+  align-items: flex-start;
+  padding: 40px;
+  margin-top: 40px;
+}
+
+.contact-form h2 {
+  font-size: 4rem;
+}
+
+.contact-form img {
+  height: auto;
+  margin-right: 20px;
+  padding-top: 90px;
+  padding-right: 36px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.form-group {
+  width: 100%;
+}
 
 /*-------- FARM LOCATION ---------*/
 
+.farm-location h2 {
+  font-size: 4rem;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 330px;
+}
 
+.farm-location p {
+  font-size: 2.2rem;
+}
 
+.map-container iframe {
+  width: 100%;
+  height: 500px;
+  max-width: 1600px;
+}
 }
