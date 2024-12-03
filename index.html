@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>kehler vegetable company</title>
     <link rel="stylesheet" href="style.css" />
+    <!--Copy code from Google fonts for Lora and Playfair Display-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,6 +17,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!--Add flavicon-->
     <link rel="icon" href="images/kehlerveggies.jpg" type="image/jpg" />
   </head>
   <body class="wrapper">
@@ -23,6 +25,8 @@
 
     <header class="header-container">
       <img src="images/kehlerlogo.png" alt="Kehler Logo" />
+      <!--Javascript copied from codepen from last exercise-->
+      <!--Code to implement hamburger menu icon. When clicked, nav items drop down-->
       <nav>
         <a class="toggle" onclick="showNav()"
           ><i class="fa fa-bars" aria-hidden="true"></i
@@ -38,10 +42,24 @@
       <!-- HERO -->
 
       <section class="homepage-hero">
-        <video autoplay muted loop width="800">
-          <source src="images/veggies-video.mp4" type="video/mp4" />
-          <source src="images/veggies-video.webm" type="video/webm" />
-          <source src="images/veggies-video.ogg" type="video/ogg" />
+        <!-- large video with text overlay -->
+        <!--Video will automatically play when user lands on homepage; video does not have sound and it continously loops-->
+        <video autoplay muted loop width="800" title="close up of tomatoes">
+          <source
+            src="images/veggies-video.mp4"
+            type="video/mp4"
+            title="close up of tomatoes"
+          />
+          <source
+            src="images/veggies-video.webm"
+            type="video/webm"
+            title="close up of tomatoes"
+          />
+          <source
+            src="images/veggies-video.ogg"
+            type="video/ogg"
+            title="close up of tomatoes"
+          />
         </video>
         <h1>kehler vegetable company</h1>
         <h2>we're so glad you stopped by!</h2>
@@ -185,6 +203,8 @@
         business owner.
       </p>
     </footer>
+    <!--Javascript copied from codepen from last exercise-->
+    <!--Makes nav items visible when triggered-->
     <script>
       function showNav() {
         var element = document.getElementById("nav-items");

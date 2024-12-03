@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>kehler vegetable company</title>
     <link rel="stylesheet" href="style.css" />
+    <!--Copy code from Google fonts for Lora and Playfair Display-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,186 +17,189 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="icon" href="images/kehlerveggies.jpg" type="image/jpg">
+    <!--Add flavicon-->
+    <link rel="icon" href="images/kehlerveggies.jpg" type="image/jpg" />
   </head>
   <body class="wrapper">
     <!-- HEADER -->
     <header class="header-container">
-        <img src="images/kehlerlogo.png" alt="Kehler Logo" />
-        <nav>
-          <a class="toggle" onclick="showNav()"
-            ><i class="fa fa-bars" aria-hidden="true"></i
-          ></a>
-          <ul id="nav-items">
-            <li><a href="index.html">home</a></li>
-            <li><a href="produce.html">produce</a></li>
-            <li><a href="contact.html">contact</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main>
+      <img src="images/kehlerlogo.png" alt="Kehler Logo" />
+      <!--Javascript copied from codepen from last exercise-->
+      <!--Code to implement hamburger menu icon. When clicked, nav items drop down-->
+      <nav>
+        <a class="toggle" onclick="showNav()"
+          ><i class="fa fa-bars" aria-hidden="true"></i
+        ></a>
+        <ul id="nav-items">
+          <li><a href="index.html">home</a></li>
+          <li><a href="produce.html">produce</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- HERO -->
 
-    <!-- HERO -->
+      <section class="produce-hero">
+        <div class="content-width">
+          <!-- large background image with text overlay-->
+          <h1>fresh from our farm to your table</h1>
+          <p>
+            Explore our seasonal harvest and discover the freshest fruits,
+            vegetables, and local goodies grown with care right here on our
+            farm. Whether you're looking for vibrant greens, crisp fruits, or
+            specialty crops, we've got everything you need to create delicious,
+            farm-to-table meals!
+          </p>
+          <a href="contact.html" class="button">get in touch with us!</a>
+        </div>
+      </section>
 
-    <section class="produce-hero">
-     <div class="content-width">
-      <!-- background image with text overlay -->
-      <h1>fresh from our farm to your table</h1>
-      <p>
-        Explore our seasonal harvest and discover the freshest fruits,
-        vegetables, and local goodies grown with care right here on our farm.
-        Whether you're looking for vibrant greens, crisp fruits, or specialty
-        crops, we've got everything you need to create delicious, farm-to-table
-        meals!
-      </p>
-      <a href="contact.html" class="button">get in touch with us!</a>
-     
-     </div>
-    </section>
+      <!-- PRODUCT SELECTION -->
+      <!-- background image behind table -->
 
-    <!-- PRODUCT SELECTION -->
-    <!-- background image behind table -->
-
-    <section class="product-list">
-      <div class="product-list-container">
-        <h2>our product selection</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Category</th>
-              <th>Item</th>
-              <th>Description</th>
-              <th>Price</th>
-              <th>Season Available</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="category">
-              <td colspan="6">Veggies</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>Zucchini</td>
-              <td>A tender, green summer squash</td>
-              <td>$1.50/ per lb ($3.31/ kg)</td>
-              <td>Summer</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>Peppers</td>
-              <td>Sweet bells of various colours</td>
-              <td>$2.50/ pepper</td>
-              <td>Summer</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>Eggplants</td>
-              <td>Classic purple globe eggplants</td>
-              <td>$3.50/ eggplant</td>
-              <td>Summer</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>Tomatoes</td>
-              <td>Sweet, sun-ripened juicy heirlooms and Romas</td>
-              <td>$6.00/ kg ($2.72/ lb) and $4.00/ kg ($1.36/ lb)</td>
-              <td>Summer</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>Cucumbers</td>
-              <td>Crisp, cool, classic green cucumbers</td>
-              <td>$3.00/ kg ($1.36/ lb)</td>
-              <td>Summer</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>Squash</td>
-              <td>Winter varities: Butternut and Acorn</td>
-              <td>$4.00/ bushel</td>
-              <td>Fall</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>Onions and Shallots</td>
-              <td>Sweet bells of various colours</td>
-              <td>$3.00/ kg ($1.36/ lb)</td>
-              <td>Fall and Winter</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>Kale and Chard</td>
-              <td>Leafy greens</td>
-              <td>$2.50/ bunch</td>
-              <td>Fall and Winter</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>Carrots</td>
-              <td>
-                Fresh and crunchy vibrant orange and heirloom rainbow, bulk
-                carrots
-              </td>
-              <td>$3.00/ bunch</td>
-              <td>Spring and Fall</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>String beans</td>
-              <td>Green and Blue Lake varieties available</td>
-              <td>$4.00/ kg/ ($1.81/ lb)</td>
-              <td>Spring and Fall</td>
-            </tr>
-            <tr class="category">
-              <td colspan="6">Fruits</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>Strawberries</td>
-              <td>Fresh, juicy strawberries</td>
-              <td>$5.00/ 500 g</td>
-              <td>Summer</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>Blueberries</td>
-              <td>Fresh, sweet blueberries</td>
-              <td>$6.00/ 500 g</td>
-              <td>Summer</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>Cherries</td>
-              <td>Ripe, juicy cherries</td>
-              <td>$8.00/ kg ($3.63/ lb)</td>
-              <td>Summer</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>Apples</td>
-              <td>Fresh, sweet apples</td>
-              <td>$3.00/ kg ($1.36/ lb)</td>
-              <td>Summer and Fall</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>Cantaloupe and Watermelons</td>
-              <td>Fresh, juicy melons</td>
-              <td>$4/ melon (for each)</td>
-              <td>Summer and Fall</td>
-            </tr>
-            <tr class="category">
-              <td colspan="6">And Eggs</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>Eggs</td>
-              <td>Fresh, non-gmo, pasture- raised eggs</td>
-              <td>$6/ dozen</td>
-              <td>Year round</td>
-            </tr>
-          </tbody>
-        </table>
+      <section class="product-list">
+        <div class="product-list-container">
+          <h2>our product selection</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Item</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Season Available</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!--Add table with 5 columns-->
+              <tr class="category">
+                <td colspan="5">Veggies</td>
+              </tr>
+              <tr>
+                <!--code for empty cell-->
+                <td>&nbsp;</td>
+                <td>Zucchini</td>
+                <td>A tender, green summer squash</td>
+                <td>$1.50/ per lb ($3.31/ kg)</td>
+                <td>Summer</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>Peppers</td>
+                <td>Sweet bells of various colours</td>
+                <td>$2.50/ pepper</td>
+                <td>Summer</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>Eggplants</td>
+                <td>Classic purple globe eggplants</td>
+                <td>$3.50/ eggplant</td>
+                <td>Summer</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>Tomatoes</td>
+                <td>Sweet, sun-ripened juicy heirlooms and Romas</td>
+                <td>$6.00/ kg ($2.72/ lb) and $4.00/ kg ($1.36/ lb)</td>
+                <td>Summer</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>Cucumbers</td>
+                <td>Crisp, cool, classic green cucumbers</td>
+                <td>$3.00/ kg ($1.36/ lb)</td>
+                <td>Summer</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>Squash</td>
+                <td>Winter varities: Butternut and Acorn</td>
+                <td>$4.00/ bushel</td>
+                <td>Fall</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>Onions and Shallots</td>
+                <td>Sweet bells of various colours</td>
+                <td>$3.00/ kg ($1.36/ lb)</td>
+                <td>Fall and Winter</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>Kale and Chard</td>
+                <td>Leafy greens</td>
+                <td>$2.50/ bunch</td>
+                <td>Fall and Winter</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>Carrots</td>
+                <td>
+                  Fresh and crunchy vibrant orange and heirloom rainbow, bulk
+                  carrots
+                </td>
+                <td>$3.00/ bunch</td>
+                <td>Spring and Fall</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>String beans</td>
+                <td>Green and Blue Lake varieties available</td>
+                <td>$4.00/ kg/ ($1.81/ lb)</td>
+                <td>Spring and Fall</td>
+              </tr>
+              <tr class="category">
+                <td colspan="5">Fruits</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>Strawberries</td>
+                <td>Fresh, juicy strawberries</td>
+                <td>$5.00/ 500 g</td>
+                <td>Summer</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>Blueberries</td>
+                <td>Fresh, sweet blueberries</td>
+                <td>$6.00/ 500 g</td>
+                <td>Summer</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>Cherries</td>
+                <td>Ripe, juicy cherries</td>
+                <td>$8.00/ kg ($3.63/ lb)</td>
+                <td>Summer</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>Apples</td>
+                <td>Fresh, sweet apples</td>
+                <td>$3.00/ kg ($1.36/ lb)</td>
+                <td>Summer and Fall</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>Cantaloupe and Watermelons</td>
+                <td>Fresh, juicy melons</td>
+                <td>$4/ melon (for each)</td>
+                <td>Summer and Fall</td>
+              </tr>
+              <tr class="category">
+                <td colspan="5">And Eggs</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>Eggs</td>
+                <td>Fresh, non-gmo, pasture- raised eggs</td>
+                <td>$6/ dozen</td>
+                <td>Year round</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <div class="notice">
           <h3>Handmade and Homegrown</h3>
@@ -213,51 +217,60 @@
             jar of homemade jam, we're happy to reserve your items for pick-up!
           </p>
           <p>
-            Check out our <a href="https://www.facebook.com/kehlervegetables">Facebook</a> 
-            page for accurate product availability and prices and to follow our farm!</p>
-          </div> 
-    </section>
+            Check out our
+            <a href="https://www.facebook.com/kehlervegetables">Facebook</a>
+            page for accurate product availability and prices and to follow our
+            farm!
+          </p>
+        </div>
+      </section>
 
-    <!-- BENEFITS -->
-    <section class="benefits">
-      <div class="benefits-content">
-      <h2>Rooted In Sustainability: A Practice Close To Our Hearts</h2>
-      <p>
-        Although we’re not officially certified organic, we grow all of our
-        produce using organic methods, focusing on soil health, natural pest
-        control, and crop rotation to maintain a thriving, resilient farm. We
-        believe in farming with respect to the land and work to ensure that what
-        we grow is not only good for you, but also for the environment.
-      </p>
-      <p>
-        At Kehler Vegetable Company, we believe that great food starts with
-        great farming. That’s why we take a hands-on approach, from carefully
-        selecting the right crops to tending to them throughout the growing
-        season. Whether it’s through composting our own manure or using
-        innovative tools like flame weeders and row covers, we focus on
-        practices that are gentle on the land and yield the best produce
-        possible.
-      </p>
-      <p>
-        Thank you for supporting local agriculture! Your support makes the world
-        of difference! If you have any questions or just want to learn more about 
-        our farm, we'd love to hear from you! 
-        <a href="contact.html" class="button">get in touch with us!</a>
-      </p>
-      </div>
-      <div class="image-cube">
-      <img
-        src="images/chickens-in-pasture.jpeg"
-        alt="chickens and dog in field"
-      />
-      <img src="images/picking-crops.jpeg" alt="man picking crops in field"/>
-      <img src="images/tractor.jpeg" alt="man on tractor in field" />
-      <img
-      src="images/vegetables_image.jpg"
-      alt="aerial view of produce laying on top of ground">
-      </div>
-    </section>
-
+      <!-- BENEFITS -->
+      <section class="benefits">
+        <div class="benefits-content">
+          <h2>Rooted In Sustainability: A Practice Close To Our Hearts</h2>
+          <p>
+            Although we’re not officially certified organic, we grow all of our
+            produce using organic methods, focusing on soil health, natural pest
+            control, and crop rotation to maintain a thriving, resilient farm.
+            We believe in farming with respect to the land and work to ensure
+            that what we grow is not only good for you, but also for the
+            environment.
+          </p>
+          <p>
+            At Kehler Vegetable Company, we believe that great food starts with
+            great farming. That’s why we take a hands-on approach, from
+            carefully selecting the right crops to tending to them throughout
+            the growing season. Whether it’s through composting our own manure
+            or using innovative tools like flame weeders and row covers, we
+            focus on practices that are gentle on the land and yield the best
+            produce possible.
+          </p>
+          <p>
+            Thank you for supporting local agriculture! Your support makes the
+            world of difference! If you have any questions or just want to learn
+            more about our farm, we'd love to hear from you!
+            <a href="contact.html" class="button">get in touch with us!</a>
+          </p>
+        </div>
+        <!--Add div class for larger devices to contol positioning/ stacking-->
+        <div class="image-cube">
+          <img
+            src="images/chickens-in-pasture.jpeg"
+            alt="chickens and dog in field"
+          />
+          <img
+            src="images/picking-crops.jpeg"
+            alt="man picking crops in field"
+          />
+          <img src="images/tractor.jpeg" alt="man on tractor in field" />
+          <img
+            src="images/vegetables_image.jpg"
+            alt="aerial view of produce laying on top of ground"
+          />
+        </div>
+      </section>
+    </main>
     <!-- FOOTER -->
 
     <footer class="footer-container">
@@ -296,12 +309,15 @@
 
       <!-- ADDITIONAL INFORMATION -->
       <p>&copy; 2018 Kehler Vegetable Company. All rights reserved.</p>
-      <p>This is a fictional website that was designed and coded as an educational 
-        exercise. It is not intended to be seen outside of the class environment. 
-        None of the content and images were approved by the business owner.
+      <p>
+        This is a fictional website that was designed and coded as an
+        educational exercise. It is not intended to be seen outside of the class
+        environment. None of the content and images were approved by the
+        business owner.
       </p>
     </footer>
-
+    <!--Javascript copied from codepen from last exercise-->
+    <!--Makes nav items visible when triggered-->
     <script>
       function showNav() {
         var element = document.getElementById("nav-items");

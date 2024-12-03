@@ -21,6 +21,7 @@
   .wrapper {
     max-width: 1800px;
   }
+  /*--setting max-width so my content is centered and doesn't stretch--*/
 
   a {
   color: #ffffff;
@@ -53,7 +54,6 @@ h2, h3, h4{
     padding: 12px 48px;
   }
   
-  
   a.button {
     border-radius: 4px;
     display: inline-block;
@@ -80,13 +80,13 @@ h2, h3, h4{
 
 .header-container {
   background-color: #163b30;
-  border: 2px solid #112f26;
   height: 15vh;
   z-index: 11;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  /*--Make header fixed at top; so when user scrolls down, the header is always in view at the top--*/
   top: 0;
   width: 100%;
   padding: 10px 20px;
@@ -97,7 +97,7 @@ h2, h3, h4{
   margin-left: 20px;
   width: 70px;
 }
-
+/* Toggles hamburger menu- allows nav li items to drop down when menu is clicked */
 .header-container nav .toggle {
   align-self: flex-end;
   cursor: pointer;
@@ -115,6 +115,7 @@ h2, h3, h4{
   left: 0;
   background-color: #c5954a;
   position: absolute;
+/*----*/
 }
 
 .header-container nav ul li {
@@ -134,6 +135,7 @@ a.toggle {
  display: none;
 }
 
+/*--Styling for drop down menu items for mobile devices--*/
 .header-container .show-items {
   display: flex;
   flex-direction: column;
@@ -157,13 +159,16 @@ a.toggle {
 }
 
 .homepage-hero video {
+/*--Apply absolute for specific positioning and to overlay text on video--*/
   position: absolute;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 1;
+  /*--Video will be cover entire section without stretching--*/
+  z-index: 0;
+  /*--Video will be behind content--*/
 }
 
 .homepage-hero video {
@@ -172,8 +177,10 @@ a.toggle {
 
 .homepage-hero h1 {
   margin-bottom: 10px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 10);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+  /*--Shadow on the text for better readability--*/
   z-index: 1;
+  /*--Content is on top of video--*/
   font-size: 4rem;
   padding: 0 25px;
   margin-top: 105px;
@@ -181,7 +188,7 @@ a.toggle {
 
 .homepage-hero h2 {
   text-transform: capitalize;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 10);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
   z-index: 1;
   font-size: 1.8rem;
   padding-top: 13px;
@@ -197,9 +204,11 @@ a.toggle {
   background-color: #163b30;
   border: 2px solid #112f26;
   transition: transform 0.3s ease, background-color 0.3s ease;
+/*--Apply transition on homepage hero link; when user hovers over link, the background colour changes colour over 0.3s transition--*/
 }
 
 .homepage-hero a.button:hover {
+/*--Apply transition to homepage hero link; when user hovers over link, background colour changes and it moves up 10px--*/
     transform: translateY(-10px);
     background-color: #0e281f;
 }
@@ -341,7 +350,7 @@ a.toggle {
   width: 122px;
   margin-right: 61px;
 }
-
+/*--Align first nav ul li item with the rest of the nav items for mobile devices*/
 .footer-container nav ul li:first-child {
   padding: 3px 15px 4px 14px;
 }
@@ -406,7 +415,7 @@ a.toggle {
   text-transform: capitalize;
   font-size: 3rem;
   line-height: 3.5rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 10);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
   text-align: center;
   margin-bottom: 11px;
   padding-right: 17px;
@@ -416,7 +425,7 @@ a.toggle {
   color: #ffffff;
   font-size: 1.5rem;
   line-height: 1.5rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 10);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
   width: 100%;
   margin-right: 13px;
 }
@@ -449,6 +458,7 @@ a.toggle {
 .product-list-container {
   background-color: #edece8; 
   padding: 0 12px 50px;
+  /*Add scroll bar to product list*/
   overflow-x: auto;
   overflow-y: hidden;
   width: 90%;
@@ -514,6 +524,11 @@ td {
   font-size: 1.4rem;
 }
 
+.notice a {
+  color: #2E2E2E;
+  text-decoration: underline;
+}
+
 /*--- BENEFITS ---*/
 
 .benefits {
@@ -554,7 +569,7 @@ td {
 
 .benefits img {
   width: 355px;
-  margin-top: 6px 18px 6px 16px;
+  margin-top: 6px;
 }
 
 /*------------------------------------- CONTACT --------------------------------*/
@@ -576,14 +591,14 @@ td {
   text-transform: capitalize;
   margin-top: 10px;
   padding: 0 43px 0 49px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 10);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
 }
 
 .contact-hero p {
   font-size: 1.5rem;
   margin-top: 29px;
   padding: 0 43px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 10);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
 }
 
 /*--- CONTACT FORM ---*/
@@ -622,6 +637,7 @@ td {
   color: #163b30;
 }
 
+/*--When user clicks in input field or textareato type, the field will be outlined with a dark green colour--*/
 .form-group input:focus, .form-group textarea:focus {
   outline: 3px solid #163b30;
 }
@@ -743,6 +759,7 @@ position: static;
 /*-------- ABOUT THE FARM ---------*/
 
 .about-container {
+/*--Arrange content so that image and text are side by side--*/
   display: flex;
   align-items: center;
   padding: 0 20px;
@@ -922,9 +939,12 @@ td {
   justify-content: center;
 }
 
+/*--Add class to group images together and for better control--*/
 .image-cube {
+/*--Apply grid to stack images on top of each other and side by side--*/ 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  /*--Add 2 columns, each takes up 1 fraction of the available space--*/
   gap: 15px;
   padding-top: 150px; 
   padding-right: 40px;
@@ -969,6 +989,7 @@ td {
   margin-top: 20px;
 }
 
+/*--Add this container to apply a neutral background to this section for aesthetics--*/
 .contact-form-container {
   display: flex;
   justify-content: center;

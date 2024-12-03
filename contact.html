@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>kehler vegetable company</title>
     <link rel="stylesheet" href="style.css" />
+    <!--Copy code from Google fonts for Lora and Playfair Display-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,13 +17,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="icon" href="images/kehlerveggies.jpg" type="image/jpg">
+    <!--Add flavicon-->
+    <link rel="icon" href="images/kehlerveggies.jpg" type="image/jpg" />
   </head>
   <body class="wrapper">
-        <!-- HEADER -->
+    <!-- HEADER -->
 
-  <header class="header-container">
+    <header class="header-container">
       <img src="images/kehlerlogo.png" alt="Kehler Logo" />
+      <!--Javascript copied from codepen from last exercise-->
+      <!--Code to implement hamburger menu icon. When clicked, nav items drop down-->
       <nav>
         <a class="toggle" onclick="showNav()"
           ><i class="fa fa-bars" aria-hidden="true"></i
@@ -35,112 +39,172 @@
       </nav>
     </header>
     <main>
-
       <!-- HERO -->
 
       <section class="contact-hero">
         <div class="content-width">
-        <!-- large background image with text overlay -->
-        <h1>we'd love to hear from you!</h1>
-          <p>If you have any questions or you'd like to get in contact with us, 
-             please fill out our contact form below.</p>
+          <!-- large background image with text overlay -->
+          <h1>we'd love to hear from you!</h1>
+          <p>
+            If you have any questions or you'd like to get in contact with us,
+            please fill out our contact form below.
+          </p>
+        </div>
       </section>
 
       <!-- CONTACT FORM -->
-        <section class="contact-form">
+      <section class="contact-form">
         <div class="contact-heading">
-         <h2>contact us</h2>
-         </div>
-         <div class="contact-form-container">
-          <img src="images/family-photo.jpeg" alt="close up of a family of four">
+          <h2>contact us</h2>
+        </div>
+        <div class="contact-form-container">
+          <img
+            src="images/family-photo.jpeg"
+            alt="close up of a family of four"
+          />
+          <!--Input 1-->
+          <!--Placeholder text disappears when user starts typing-->
+          <!--All fields are required for user to fill out except for phone number-->
           <form action="/submit-form" method="post">
             <div class="form-group">
-              <input type="text" id="name" name="name" required placeholder="Your Name">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Your Name"
+              />
             </div>
+            <!--Input 2-->
             <div class="form-group">
-                <input type="text" id="email" name="email" required placeholder="Your Email">
+              <input
+                type="text"
+                id="email"
+                name="email"
+                required
+                placeholder="Your Email"
+              />
             </div>
+            <!--Input 3-->
             <div class="form-group">
-                <input type="text" id="phone" name="phone" placeholder="Phone number">
+              <input
+                type="text"
+                id="phone"
+                name="phone"
+                placeholder="Phone number"
+              />
             </div>
+            <!--Input 4-->
             <div class="form-group">
-                <input type="text" id="subject" name="subject" required placeholder="Subject">
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                required
+                placeholder="Subject"
+              />
             </div>
+            <!--Input 5-->
             <div class="form-group">
-                <textarea id="message" name="message" required placeholder="Your Message" rows="8"></textarea>
+              <textarea
+                id="message"
+                name="message"
+                required
+                placeholder="Your Message"
+                rows="8"
+              ></textarea>
             </div>
-              <button type="submit" class="btn-submit">Send Message</button>
+            <button type="submit" class="btn-submit">Send Message</button>
           </form>
-          </div>
-        </section>
+        </div>
+      </section>
 
       <!-- FARM LOCATION -->
 
-        <section class="farm-location">
-          <div class="location-content">
-            <h2>our location</h2>
-            <p>8083 North Island Highway, Black Creek, BC V9J 1G7</p>
-            <p>Phone: 250-202-3236</p>
-            <p>kehlervegetables@gmail.com</p>
-            <p>General hours: Wed-Fri 10:00 AM - 5:00 PM, Saturday 9:00 AM - 12:00 PM</p>
-            <p>Check our<a href="https://www.facebook.com/kehlervegetables">Facebook</a> page for up-to-date hours</p>
-          </div>  
-          <!--Copied from Google Maps embed-->
-          <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10295.819460529894!2d-125.1253641!3d49.8245135!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54881ba521f0dd49%3A0xb8c066fbd0190296!2sKehler%20Vegetable%20Company!5e0!3m2!1sen!2sca!4v1732576503362!5m2!1sen!2sca" 
-            title="Google map showing Kehler Vegetable Company location" width="600" height="450" style="border:0;" 
-            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </section>
+      <section class="farm-location">
+        <div class="location-content">
+          <h2>our location</h2>
+          <p>8083 North Island Highway, Black Creek, BC V9J 1G7</p>
+          <p>Phone: 250-202-3236</p>
+          <p>kehlervegetables@gmail.com</p>
+          <p>
+            General hours: Wed-Fri 10:00 AM - 5:00 PM, Saturday 9:00 AM - 12:00
+            PM
+          </p>
+          <p>
+            Check our<a href="https://www.facebook.com/kehlervegetables"
+              >Facebook</a
+            >
+            page for up-to-date hours
+          </p>
+        </div>
+        <!--Copied from Google Maps embed-->
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10295.819460529894!2d-125.1253641!3d49.8245135!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54881ba521f0dd49%3A0xb8c066fbd0190296!2sKehler%20Vegetable%20Company!5e0!3m2!1sen!2sca!4v1732576503362!5m2!1sen!2sca"
+            title="Google map showing Kehler Vegetable Company location"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
 
-      <!-- FOOTER -->
+    <footer class="footer-container">
+      <!-- NAVIGATION -->
+      <nav>
+        <ul>
+          <li><a href="/">home</a></li>
+          <li><a href="/produce">produce</a></li>
+          <li><a href="/contact">contact</a></li>
+        </ul>
+      </nav>
 
-<footer class="footer-container">
-    <!-- NAVIGATION -->
-    <nav>
+      <!-- SOCIAL MEDIA LINKS -->
       <ul>
-        <li><a href="/">home</a></li>
-        <li><a href="/produce">produce</a></li>
-        <li><a href="/contact">contact</a></li>
+        <li>
+          <a href="https://facebook.com/kehlervegetables" target="_blank">
+            <img src="images/facebook-icon.png" alt="facebook logo"
+          /></a>
+        </li>
+        <li>
+          <a href="https://instagram.com/kehlervegetables" target="_blank">
+            <img src="images/instagram-icon.jpg" alt="instagram logo"
+          /></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/kehlervegetables" target="_blank">
+            <img src="images/twitter-icon.png" alt="twitter logo"
+          /></a>
+        </li>
       </ul>
-    </nav>
 
-    <!-- SOCIAL MEDIA LINKS -->
-    <ul>
-      <li>
-        <a href="https://facebook.com/kehlervegetables" target="_blank">
-          <img src="images/facebook-icon.png" alt="facebook logo"
-        /></a>
-      </li>
-      <li>
-        <a href="https://instagram.com/kehlervegetables" target="_blank">
-          <img src="images/instagram-icon.jpg" alt="instagram logo"
-        /></a>
-      </li>
-      <li>
-        <a href="https://twitter.com/kehlervegetables" target="_blank">
-          <img src="images/twitter-icon.png" alt="twitter logo"
-        /></a>
-      </li>
-    </ul>
+      <!-- CONTACT INFORMATION -->
+      <h4>Get social with us!</h4>
+      <p>Phone: (250) 202-3236</p>
+      <p>Email: kehlervegetables@gmail.com</p>
 
-    <!-- CONTACT INFORMATION -->
-    <h4>Get social with us!</h4>
-    <p>Phone: (250) 202-3236</p>
-    <p>Email: kehlervegetables@gmail.com</p>
-
-    <!-- ADDITIONAL INFORMATION -->
-    <p>&copy; 2018 Kehler Vegetable Company. All rights reserved.</p>
-    <p>This is a fictional website that was designed and coded as an educational 
-        exercise. It is not intended to be seen outside of the class environment. 
-        None of the content and images were approved by the business owner.
+      <!-- ADDITIONAL INFORMATION -->
+      <p>&copy; 2018 Kehler Vegetable Company. All rights reserved.</p>
+      <p>
+        This is a fictional website that was designed and coded as an
+        educational exercise. It is not intended to be seen outside of the class
+        environment. None of the content and images were approved by the
+        business owner.
       </p>
-  </footer>
-  <script>
-    function showNav() {
-      var element = document.getElementById("nav-items");
-      element.classList.toggle("show-items");
-    }
-  </script>
-</body>
+    </footer>
+    <!--Javascript copied from codepen from last exercise-->
+    <!--Makes nav items visible when triggered-->
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
+  </body>
 </html>
