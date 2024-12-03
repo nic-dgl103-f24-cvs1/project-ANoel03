@@ -1,0 +1,1042 @@
+/*-------- GLOBAL STYLES ---------*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-size: 1.4rem;
+    margin: 0;
+    font-family: "Lora", "Open Sans";
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .wrapper {
+    max-width: 1800px;
+  }
+  /*--setting max-width so my content is centered and doesn't stretch--*/
+
+  a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: capitalize;
+  }
+
+/*-------- TYPOGRAPHY ---------*/
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.3;
+    font-weight: 600;
+    margin-top: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: "Playfair Display", "Open Sans";
+    color: #ffffff;
+  }
+  
+h2, h3, h4{
+    font-family: "Playfair Display", "Open Sans";
+    color: #ffffff;
+    text-transform: capitalize;
+    font-size: 3.7rem;
+  }
+
+  a {
+    display: block;
+    padding: 12px 48px;
+  }
+  
+  a.button {
+    border-radius: 4px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 26px 0;
+  }
+
+/*-------- UTILITY ---------*/
+
+.content-width {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/*--------------------------SMALL DEVICES (mobile max 768px) ---------------------------*/
+/*------------------------------------- HOMEPAGE --------------------------------*/
+/*-------- HEADER ---------*/
+
+.header-container {
+  background-color: #163b30;
+  height: 25vh;
+  z-index: 11;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  /*--Make header fixed at top; so when user scrolls down, the header is always in view at the top--*/
+  top: 0;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.header-container img {
+  margin-top: 0;
+  margin-left: 20px;
+  width: 70px;
+}
+/* Toggles hamburger menu- allows nav li items to drop down when menu is clicked */
+.header-container nav .toggle {
+  align-self: flex-end;
+  cursor: pointer;
+  top: 32px;
+  font-size: 30px;
+}
+
+.header-container nav ul {
+  display: none;
+  list-style-type: none;
+  margin-top: 33px;
+  padding: 60px 0;
+  width: 100%;
+  top: 100px;  
+  left: 0;
+  background-color: #c5954a;
+  position: absolute;
+/*----*/
+}
+
+.header-container nav ul li {
+  padding: 8px 0;
+}
+
+.header-container nav ul li a {
+  text-transform: uppercase;
+}
+
+a.toggle {
+  margin: 14px;
+  padding: 0 34px;
+}
+
+.header-container ul {
+ display: none;
+}
+
+/*--Styling for drop down menu items for mobile devices--*/
+.header-container .show-items {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  text-align: center;
+  padding-right: 45px;
+}
+
+/*-------- HERO ---------*/
+
+/*---stylings for homepage hero---*/
+
+.homepage-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.homepage-hero video {
+/*--Apply absolute for specific positioning and to overlay text on video--*/
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /*--Video will be cover entire section without stretching--*/
+  z-index: 0;
+  /*--Video will be behind content--*/
+}
+
+.homepage-hero video {
+  width: 100%;
+}
+
+.homepage-hero h1 {
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+  /*--Shadow on the text for better readability--*/
+  z-index: 1;
+  /*--Content is on top of video--*/
+  font-size: 4rem;
+  padding: 0 25px;
+  margin-top: 105px;
+}
+
+.homepage-hero h2 {
+  text-transform: capitalize;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+  z-index: 1;
+  font-size: 1.8rem;
+  padding-top: 13px;
+  padding-left: 7px;
+  color: #ffffff;
+}
+
+.homepage-hero a.button {
+  padding: 12px 30px;
+  z-index: 1;
+  margin-top: 17px;
+  margin-left: 8px;
+  background-color: #163b30;
+  border: 2px solid #112f26;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+/*--Apply transition on homepage hero link; when user hovers over link, the background colour changes colour over 0.3s transition--*/
+}
+
+.homepage-hero a.button:hover {
+/*--Apply transition to homepage hero link; when user hovers over link, background colour changes and it moves up 10px--*/
+    transform: translateY(-10px);
+    background-color: #0e281f;
+}
+
+.homepage-hero a {
+  padding: 12px 48px;
+  z-index: 1;
+}
+
+/*------ ABOUT THE FARM ------*/
+
+.about-container {
+  margin: 20px;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.content-container {
+  width: 100%;
+  text-align: center;
+}
+
+.content-container h2 {
+  font-size: 2.7rem;
+  color: #c5954a;
+  padding-top: 30px;
+}
+
+.content-container p {
+  padding-top: 16px;
+}
+
+.content-container a.button {
+  font-size: 1.4rem ;
+  padding: 12px 20px;
+  background-color: #c5954a;
+  border: 2px solid #a88040;
+  transition: background-color 0.3s ease;
+}
+
+.content-container a.button:hover {
+  background-color: #906e36;
+}
+
+/*---- CALL-TO-ACTION ----*/
+
+.action-container {
+  background-color: #fee8dc;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.action-container img {
+  width: 100%;
+  padding: 40px 35px 0 50px;
+}
+
+.action-container h2 {
+  color: #163b30;
+  padding-top: 30px;
+  font-size: 2.7rem;
+}
+
+.action-container a.button {
+  background-color: #163b30;
+  border: 2px solid #112f26;
+  border-radius: 4px;
+  font-size: 1.3rem ;
+  margin-top: 25px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.action-container a.button:hover {
+  background-color: #0e281f;
+}
+
+/*---- COMMUNITY AND EVENTS ----*/
+
+.community-events {
+  text-align: center;
+}
+
+.community-events h2 {
+  font-size: 2.7rem;
+  color: #163b30;
+  margin-top: 35px;
+}
+
+.community-events h3 {
+  font-size: 1.7rem;
+}
+
+.community-events p {
+  padding: 26px 34px 0 41px;
+  font-size: 1.5rem;
+}
+
+.community-events a.button {
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 1.3rem;
+  background-color: #c5954a;
+  border: 2px solid #a88040;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.community-events a.button:hover {
+  background-color: #906e36;
+}
+
+.community-events img {
+  width: 100%;
+}
+
+/*---- FOOTER ----*/
+
+.footer-container {
+  background-color: #163b30;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-container nav ul {
+  margin-left: 60px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-container nav ul li {
+  width: 122px;
+  margin-right: 61px;
+}
+/*--Align first nav ul li item with the rest of the nav items for mobile devices*/
+.footer-container nav ul li:first-child {
+  padding: 3px 15px 4px 14px;
+}
+
+.footer-container nav ul li a {
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 11px 15px;
+}
+
+.footer-container ul {
+  display: flex;
+  margin-bottom: 25px;
+  justify-content: center;
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.footer-container ul li {
+  margin-right: 15px;
+}
+
+.footer-container ul li a {
+  font-size: 1.8rem;
+}
+
+.footer-container ul li a img {
+  width: 25px;
+  height: 25px;
+}
+
+.footer-container h4 {
+  text-align: center;
+  margin: 5px 0;
+  color: #ffffff;
+  font-size: 1.7rem;
+}
+
+.footer-container p {
+  text-align: center;
+  margin: 5px 28px 0;
+  color: #ffffff;
+}
+
+/*------------------------------------- PRODUCE --------------------------------*/
+
+/*---- HERO ----*/
+
+.produce-hero {
+  background-image: url("images/marketveggies.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 48px;
+  padding-top: 64px;
+  justify-content: center;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+
+.produce-hero h1 {
+  text-transform: capitalize;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+  text-align: center;
+  margin-bottom: 11px;
+  padding-right: 17px;
+}
+
+.produce-hero p {
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+  width: 100%;
+  margin-right: 13px;
+}
+
+.produce-hero a.button {
+  font-size: 1.3rem ;
+  padding: 10px 20px;
+  margin: 15px 0 21px 0;
+  background-color: #163b30;
+  border: 2px solid #112f26;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.produce-hero a.button:hover {
+    transform: translateY(-10px);
+    background-color: #0e281f;
+}
+
+/*--- PRODUCT SELECTION ---*/
+
+.product-list {
+  background-image: url("images/leaf_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  width: 417px;
+  padding: 20px;
+}
+
+.product-list-container {
+  background-color: #edece8; 
+  padding: 0 12px 50px;
+  /*Add scroll bar to product list*/
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 90%;
+  margin: 18px 0 37px 18px;
+  border-radius: 4px;
+}
+
+.product-list h2 {
+  font-size: 2.7rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #2E2E2E;
+  padding-right: 0;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  padding: 10px;
+  text-align: left;
+  border: solid 2px  #9b9a9a;
+  background-color: #fee8dc;
+  font-size: 1.7rem;
+}
+
+tbody {
+  background-color: #edece8;
+}
+
+.category {
+  background-color: #cbc2b9;
+}
+
+td {
+  padding: 10px;
+  text-align: left;
+  border: 2px solid  #9b9a9a;
+  font-size: 1.4rem;
+}
+
+.notice {
+  background-color: #fee8dc;
+  color: #2E2E2E;
+  border-radius: 4px;
+  text-align: center;
+  padding: 5px 19px 35px 20px;
+  margin: 10px 10px 23px 18px;
+  width: 90%;
+}
+
+.notice h3 {
+  color:#2E2E2E;
+  font-size: 1.9rem;
+  margin: 20px 0;
+}
+
+.notice p {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.notice a {
+  color: #2E2E2E;
+  text-decoration: underline;
+}
+
+/*--- BENEFITS ---*/
+
+.benefits {
+  text-align: center;
+  margin: 8px 0;
+  padding: 0 15px;
+}
+
+.benefits h2 {
+  color: #c5954a;
+  font-size: 2.7rem;
+  padding-right: 31px;
+  padding-left: 31px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.benefits p {
+  font-size: 1.5rem;
+  padding-right: 25px;
+  padding-left: 31px;
+}
+
+.benefits .button {
+  display: flex;
+  margin: 15px 76px 30px 67px;
+  padding: 10px 29px 10px 34px;
+  color: #ffffff;
+  background-color: #c5954a;
+  border: 2px solid #a88040;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.benefits a.button:hover {
+  background-color: #906e36;
+}
+
+.benefits img {
+  width: 355px;
+  margin-top: 6px;
+}
+
+/*------------------------------------- CONTACT --------------------------------*/
+
+/*--- HERO ---*/
+
+.contact-hero {
+  background-image: url("images/farm_view.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 48px;
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.contact-hero h1 {
+  text-transform: capitalize;
+  margin-top: 10px;
+  padding: 0 43px 0 49px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+
+.contact-hero p {
+  font-size: 1.5rem;
+  margin-top: 29px;
+  padding: 0 43px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+
+/*--- CONTACT FORM ---*/
+
+.contact-form {
+  margin-left: 0;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #163b30;
+  border: 2px solid #112f26;
+}
+
+.contact-form h2 {
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 2px;
+  margin-bottom: 18px;
+}
+
+.contact-form img {
+  margin: 12px 0 0 12px;
+  padding: 0;
+  max-width: 350px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  margin-top: 29px;
+  text-align: center;
+}
+
+.form-group input, .form-group textarea {
+  padding: 20px 35px 20px 50px;
+  border-radius: 4px;
+  border: 2px solid #6b5128;
+  color: #163b30;
+}
+
+/*--When user clicks in input field or textareato type, the field will be outlined with a dark green colour--*/
+.form-group input:focus, .form-group textarea:focus {
+  outline: 3px solid #163b30;
+}
+
+.btn-submit {
+  background-color: #c5954a;
+  color: #ffffff;
+  padding: 12px 20px;
+  border: solid 2px #6b5128;
+  border-radius: 4px;
+  margin-left: 124px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  transform: translateY(-10px);
+  background-color: #906e36;
+}
+
+/*--- FARM LOCATION ---*/
+
+.location-content {
+  margin: 50px 0;
+}
+
+.farm-location h2 {
+  color: #163b30;
+  text-align: center;
+}
+
+.farm-location p {
+  text-align: center;
+  line-height: 1.5rem;
+  font-size: 1.5rem;
+  margin: 0 41px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  color: #163b30;
+}
+
+.location-content a {
+  color: #163b30;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.map-container iframe {
+  width: 100%;
+  max-width: 425px;
+  height: 400px;
+  margin-top: 25px;
+}
+
+/*----------------------LARGE DEVICES (desktops, 768px and up) ---------------------------*/
+@media only screen and (min-width: 768px) {
+  
+/*------------------------------------- HOMEPAGE --------------------------------*/
+/*-------- HEADER ---------*/
+
+.header-container {
+  height: 15vh;
+}
+
+.header-container img {
+  width: 85px;
+}
+
+.header-container nav .toggle {
+  display: none;
+}
+
+.header-container nav ul {
+display: flex;
+flex-direction: row;
+background: none;
+position: static;
+}
+
+/*-------- HOMEPAGE HERO ---------*/
+
+.homepage-hero {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin-top: 83px;
+}
+
+.homepage-hero video {
+  object-fit: cover;
+}
+
+.homepage-hero h1 {
+  font-size: 7rem;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.homepage-hero h2 {
+  font-size: 4rem;
+  margin-top: 20px;
+  padding: 0
+}
+
+.homepage-hero a.button {
+  font-size: 2rem;
+  margin-top: 47px;
+  padding: 14px 25px;
+}
+
+.action-container p {
+  padding: 0 20px;
+}
+
+.action-container img {
+  width: 60%;
+}
+
+/*-------- ABOUT THE FARM ---------*/
+
+.about-container {
+/*--Arrange content so that image and text are side by side--*/
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 110px;
+  flex-direction: row;
+}
+
+.image-container img {
+  max-width: 900px;
+  margin-left: 20px;
+}
+
+.content-container {
+  margin-left: 50px;
+}
+
+.content-container h2 {
+  font-size: 4rem;
+}
+
+.content-container p {
+  font-size: 2.2rem;
+  padding: 0 30px;
+}
+
+.content-container a.button {
+  padding: 12px 0;
+  margin-top: 27px;
+  width: 314px;
+  font-size: 2rem;
+}
+
+/*-------- CALL-TO-ACTION ---------*/
+
+.action-container h2 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.action-container p {
+  font-size: 2.2rem;
+  padding: 0 20px;
+}
+
+.action-container a.button {
+  font-size: 2rem;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  padding: 12px 25px;
+}
+
+/*-------- COMMUNITY EVENTS ---------*/
+
+.community-events {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.community-events h2 {
+  font-size: 4rem;
+  margin-top: 45px;
+}
+
+.community-events p {
+  font-size: 2.2rem;
+}
+
+.community-events a.button {
+  font-size: 2rem;
+  padding: 12px 25px;
+  margin-top: 20px;
+}
+
+.community-events img {
+  max-width: 600px;
+  margin: 60px 40px 24px 0;
+}
+
+.footer-container ul li a img {
+  width: 30px;
+  height: 30px;
+}
+
+/*------------------------------------- PRODUCE PAGE --------------------------------*/
+
+/*-------- PRODUCE HERO ---------*/
+
+.produce-hero h1 {
+  font-size: 7rem;
+  white-space: nowrap;
+  padding-top: 200px;
+}
+
+.produce-hero p {
+  font-size: 2.2rem;
+  width: 900px;
+  line-height: 27px;
+  margin-top: 70px;
+}
+
+.produce-hero a.button {
+  font-size: 2rem;
+  padding: 14px 25px;
+  margin-top: 41px;
+  margin-bottom: 21px;
+}
+
+/*-------- PRODUCT SELECTION ---------*/
+
+.product-list {
+  width: 100%;
+  padding: 60px 0 60px 90px;
+}
+
+.product-list-container {
+  padding: 20px 52px 55px 52px;
+}
+
+.product-list h2 {
+  font-size: 4rem;
+}
+
+th {
+  font-size: 2.2rem;
+}
+
+td {
+  font-size: 2.2rem;
+}
+
+.notice h3 {
+  font-size: 3rem;
+  padding-top: 20px;
+}
+
+.notice p {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.notice a {
+  text-decoration: underline;
+  color: #2E2E2E;
+}
+
+/*-------- BENEFITS ---------*/
+
+.benefits {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+  margin: 8px 0;
+  padding: 20px 30px;
+}
+
+.benefits-content {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.benefits h2 {
+  font-size: 4rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.benefits p {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.benefits .button {
+  font-size: 2rem;
+  margin: 20px 150px;
+  padding: 15px;
+  justify-content: center;
+}
+
+/*--Add class to group images together and for better control--*/
+.image-cube {
+/*--Apply grid to stack images on top of each other and side by side--*/ 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /*--Add 2 columns, each takes up 1 fraction of the available space--*/
+  gap: 15px;
+  padding-top: 150px; 
+  padding-right: 40px;
+}
+
+.benefits img {
+  width: 355px;
+}
+
+/*------------------------------------- CONTACT PAGE --------------------------------*/
+
+/*-------- CONTACT HERO ---------*/
+
+.contact-hero {
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 80px 100px;
+  height: 100vh;
+}
+
+.contact-hero h1 {
+  font-size: 7rem;
+  padding-left: 180px;
+}
+
+.contact-hero p {
+  font-size: 2.2rem;
+  margin-top: 50px;
+  max-width: 700px;
+  margin-left: 306px;
+}
+
+/*-------- CONTACT FORM ---------*/
+
+.contact-form h2 {
+  font-size: 4rem;
+}
+
+.contact-heading {
+  margin-top: 20px;
+}
+
+/*--Add this container to apply a neutral background to this section for aesthetics--*/
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #edece8;
+  width: 990px;
+  margin-left: 230px;
+  border-radius: 4px;
+  margin-bottom: 45px;
+}
+
+.contact-form img {
+  width: 50%;
+  max-width: 100%;
+  margin-left: 82px
+}
+
+.contact-form form {
+  width: 50%;
+  margin-top: 15px;
+}
+
+.form-group input {
+  font-size: 1.5rem;
+}
+
+.btn-submit {
+  font-size: 1.7rem;
+  margin-bottom: 30px;
+}
+
+/*-------- FARM LOCATION ---------*/
+
+.location-content h2 {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;  
+  margin-bottom: 30px;
+}
+
+.location-content p {
+  font-size: 2.2rem;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 500px;
+  max-width: 1600px;
+}
+}

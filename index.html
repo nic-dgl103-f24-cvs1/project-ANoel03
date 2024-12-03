@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kehler vegetable company</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--Copy code from Google fonts for Lora and Playfair Display-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Open+Sans:ital@0;1&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font Awesome link from codepen-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--Add flavicon-->
+    <link rel="icon" href="images/kehlerveggies.jpg" type="image/jpg" />
+  </head>
+  <body class="wrapper">
+    <!-- HEADER -->
+
+    <header class="header-container">
+      <img src="images/kehlerlogo.png" alt="Kehler Logo" />
+      <!--Javascript copied from codepen from last exercise-->
+      <!--Code to implement hamburger menu icon. When clicked, nav items drop down-->
+      <nav>
+        <a class="toggle" onclick="showNav()"
+          ><i class="fa fa-bars" aria-hidden="true"></i
+        ></a>
+        <ul id="nav-items">
+          <li><a href="index.html">home</a></li>
+          <li><a href="produce.html">produce</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- HERO -->
+
+      <section class="homepage-hero">
+        <!-- large video with text overlay -->
+        <!--Video will automatically play when user lands on homepage; video does not have sound and it continously loops-->
+        <video autoplay muted loop width="800" title="close up of tomatoes">
+          <source
+            src="images/veggies-video.mp4"
+            type="video/mp4"
+            title="close up of tomatoes"
+          />
+          <source
+            src="images/veggies-video.webm"
+            type="video/webm"
+            title="close up of tomatoes"
+          />
+          <source
+            src="images/veggies-video.ogg"
+            type="video/ogg"
+            title="close up of tomatoes"
+          />
+        </video>
+        <h1>kehler vegetable company</h1>
+        <h2>we're so glad you stopped by!</h2>
+        <a class="button" href="produce.html">browse our selection</a>
+      </section>
+
+      <!-- ABOUT THE FARM -->
+
+      <section class="about-container">
+        <div class="image-container">
+          <img src="images/rootsveggies.jpg" alt="root vegetables" />
+        </div>
+        <div class="content-container">
+          <h2>About Us</h2>
+          <p>
+            Welcome to Kehler Vegetable Company! We are a family-owned, small
+            mixed market farm. Nestled in the heart of Black Creek, our farm
+            sits on 20-acres in the scenic Comox Valley. We are committed to
+            growing high-quality, seasonal produce that nourishes both our
+            neighbours and the land we care for. We take great pride in growing
+            fresh, nutrient-dense produce, all while using sustainable farming
+            practices that support the health of the ecosystem. We proudly
+            provide fresh vegetables, berries, and eggs from our pasture.
+            Passionate about supporting our community, we're committed to
+            offering the best local produce. Whether you’re here to pick up
+            seasonal vegetables, fresh berries, or our pasture-raised eggs,
+            we’re excited to share what we grow with you!
+          </p>
+          <p>
+            To see what's in season and browse our current selection, click
+            below to explore our farmstand offerings!
+          </p>
+          <a class="button" href="produce.html">browse our selection</a>
+        </div>
+      </section>
+
+      <!-- CALL-TO-ACTION -->
+
+      <section class="action-container">
+        <img src="images/farm_stand.jpg" alt="farm-stand" />
+        <h2>how to shop with us</h2>
+        <p>
+          Our farmstand is located right at the farm gate and is open seasonally
+          for your convenience. We operate on the honour system, making it easy
+          to shop and support local agriculture. Simply stop by, browse our
+          selection, and leave payment in the collection box. We are open
+          Wednesday through Friday from 10 a.m. to 5 p.m., and Saturday from 9
+          a.m. to noon. For those seeking larger quantities, we also offer
+          wholesale orders. Please reach out to us for more details about this
+          option.
+        </p>
+        <p>
+          Thank you for supporting Kehler Vegetable Company and for being a part
+          of our story. We’re excited to continue growing and sharing fresh,
+          local food with you!
+        </p>
+        <p>
+          To see what's in season and browse our current selection, click below
+          to explore our farmstand offerings!
+        </p>
+        <a class="button" href="produce.html">browse our selection</a>
+      </section>
+
+      <!-- COMMUNITY AND EVENTS -->
+
+      <section class="community-events">
+        <div>
+          <h2>community and events</h2>
+          <p>
+            At Kehler Vegetable Company, we believe that farming is about more
+            than just growing food— it's about building connections, supporting
+            sustainability, and nurturing a healthier, more vibrant community.
+            That's why we actively participate in local events and host
+            gatherings at our farm that celebrate not only the bounty of the
+            land, but also the values that matter most to us: sustainability,
+            minimalism, and living in harmony with nature. Throughout the year,
+            we host a variety of events designed to bring people together around
+            healthy living and local agriculture. From hands-on workshops about
+            growing your own vegetables and creating sustainable gardens, to
+            cooking classes focused on plant-based recipes using fresh, seasonal
+            ingredients, our events aim to inspire and empower our community to
+            make mindful choices about the food they eat and how they live. We’d
+            love for you to be part of our next community event! Keep an eye on
+            our upcoming calendar, and be sure to follow us on social media for
+            updates on workshops, farm tours, and community initiatives.
+            Together, we can create a more sustainable, healthy, and connected
+            future.
+          </p>
+          <a class="button" href="#">upcoming events</a>
+        </div>
+
+        <img
+          src="images/tomatoes-bowl.jpg"
+          alt="two pairs of hands holding a bowl of tomatoes"
+        />
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer-container">
+      <!-- NAVIGATION -->
+      <nav>
+        <ul>
+          <li><a href="/">home</a></li>
+          <li><a href="/produce">produce</a></li>
+          <li><a href="/contact">contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- SOCIAL MEDIA LINKS -->
+      <ul>
+        <li>
+          <a href="https://facebook.com/kehlervegetables" target="_blank">
+            <img src="images/facebook-icon.png" alt="facebook logo"
+          /></a>
+        </li>
+        <li>
+          <a href="https://instagram.com/kehlervegetables" target="_blank">
+            <img src="images/instagram-icon.jpg" alt="instagram logo"
+          /></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/kehlervegetables" target="_blank">
+            <img src="images/twitter-icon.png" alt="twitter logo"
+          /></a>
+        </li>
+      </ul>
+
+      <!-- CONTACT INFORMATION -->
+      <h4>Get social with us!</h4>
+      <p>Phone: (250) 202-3236</p>
+      <p>Email: kehlervegetables@gmail.com</p>
+
+      <!-- ADDITIONAL INFORMATION -->
+      <p>&copy; 2018 Kehler Vegetable Company. All rights reserved.</p>
+      <p>
+        This is a fictional website that was designed and coded as an
+        educational exercise. It is not intended to be seen outside of the class
+        environment. None of the content and images were approved by the
+        business owner.
+      </p>
+    </footer>
+    <!--Javascript copied from codepen from last exercise-->
+    <!--Makes nav items visible when triggered-->
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
+  </body>
+</html>
