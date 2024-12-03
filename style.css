@@ -65,9 +65,13 @@ h2, h3, h4{
 /*-------- UTILITY ---------*/
 
 .content-width {
-  width: 334px;
-  height: 700px;
-  margin: auto;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
 }
 
 /*--------------------------SMALL DEVICES (mobile max 768px) ---------------------------*/
@@ -371,8 +375,6 @@ a.toggle {
   background-color: #ffffff;
 }
 
-.content-width {
-}
 
 .produce-hero h1 {
   text-transform: capitalize;
@@ -411,7 +413,7 @@ a.toggle {
 }
 
 .product-list-container {
-  background-color: #f1eeeb; 
+  background-color: #edece8; 
   padding: 0 12px 50px;
   overflow-x: auto;
   overflow-y: hidden;
@@ -492,6 +494,7 @@ td {
   padding-right: 31px;
   padding-left: 31px;
   margin-top: 20px;
+  text-align: center;
 }
 
 .benefits p {
@@ -570,9 +573,9 @@ td {
 }
 
 .form-group input, .form-group textarea {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #9b9a9a;
+  padding: 20px 35px 20px 50px;
+  border-radius: 4px;
+  border: 2px solid #6b5128;
   color: #163b30;
 }
 
@@ -585,16 +588,18 @@ td {
   color: #ffffff;
   padding: 12px 20px;
   border: solid 2px #6b5128;
-  border-radius: 5px;
-  margin-bottom: 4px;
+  border-radius: 4px;
   margin-left: 124px;
 }
 
 /*--- FARM LOCATION ---*/
 
+.location-content {
+  margin: 50px 0;
+}
+
 .farm-location h2 {
   color: #163b30;
-  margin: 37px 0 15px 95px;
 }
 
 .farm-location p {
@@ -608,9 +613,10 @@ td {
   color: #163b30;
 }
 
-.farm-location a {
+.location-content a {
   color: #163b30;
   text-align: center;
+  text-decoration: underline;
 }
 
 .map-container iframe {
@@ -673,7 +679,7 @@ position: static;
 .homepage-hero a.button {
   font-size: 2rem;
   margin-top: 47px;
-  padding: 12px 30px;
+  padding: 14px 25px;
 }
 
 .action-container p {
@@ -733,8 +739,15 @@ position: static;
 .produce-hero p {
   font-size: 2.2rem;
   width: 900px;
-  padding-top: 120px;
   line-height: 27px;
+  margin-top: 70px;
+}
+
+.produce-hero a.button {
+  font-size: 2rem;
+  padding: 14px 25px;
+  margin-top: 41px;
+  margin-bottom: 21px;
 }
 
 /*-------- PRODUCT SELECTION ---------*/
@@ -830,15 +843,18 @@ td {
 
 .contact-hero h1 {
   font-size: 7rem;
-  white-space: nowrap;
+  padding-left: 180px;
 }
 
 .contact-hero p {
   font-size: 2.2rem;
+  margin-top: 50px;
+  padding-left: 0 260px;
 }
 
 .community-events {
  display: flex;
+ padding: 20px;
 }
 
 .community-events div {
@@ -851,41 +867,51 @@ td {
 
 /*-------- CONTACT FORM ---------*/
 
-.contact-form {
-  display: flex;
-  justify-self: flex-start;
-  align-items: flex-start;
-  padding: 40px;
-  margin-top: 40px;
-}
-
 .contact-form h2 {
   font-size: 4rem;
 }
 
-.contact-form img {
-  height: auto;
-  margin-right: 20px;
-  padding-top: 90px;
-  padding-right: 36px;
-  width: 100%;
-  max-width: 500px;
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #edece8;
+  width: 990px;
+  margin-left: 230px;
+  border-radius: 4px;
+  margin-bottom: 25px;
 }
 
-.form-group {
-  width: 100%;
+.contact-form img {
+  width: 50%;
+  max-width: 100%;
+  margin-left: 82px
+}
+
+.contact-form form {
+  width: 50%;
+  margin-top: 15px;
+}
+
+.form-group input {
+  font-size: 1.5rem;
+}
+
+.btn-submit {
+  font-size: 1.7rem;
+  margin-bottom: 30px;
 }
 
 /*-------- FARM LOCATION ---------*/
 
-.farm-location h2 {
+.location-content h2 {
   font-size: 4rem;
   display: flex;
-  justify-content: flex-start;
-  padding-left: 330px;
+  justify-content: center;  
+  margin-bottom: 30px;
 }
 
-.farm-location p {
+.location-content p {
   font-size: 2.2rem;
 }
 
