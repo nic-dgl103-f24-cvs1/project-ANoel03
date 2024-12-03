@@ -18,15 +18,15 @@
     line-height: 1.5;
   }
 
+  .wrapper {
+    max-width: 1800px;
+  }
+
   a {
   color: #ffffff;
   text-decoration: none;
   text-transform: capitalize;
   }
-
-.homepage-hero a.button, .produce-hero a.button, .contact-hero a.button {
-  background-color: #163b30;
-}
 
 /*-------- TYPOGRAPHY ---------*/
 
@@ -80,6 +80,7 @@ h2, h3, h4{
 
 .header-container {
   background-color: #163b30;
+  border: 2px solid #112f26;
   height: 15vh;
   z-index: 11;
   display: flex;
@@ -94,7 +95,7 @@ h2, h3, h4{
 .header-container img {
   margin-top: 0;
   margin-left: 20px;
-  width: 43px;
+  width: 70px;
 }
 
 .header-container nav .toggle {
@@ -167,12 +168,11 @@ a.toggle {
 
 .homepage-hero video {
   width: 100%;
- 
 }
 
 .homepage-hero h1 {
   margin-bottom: 10px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 10);
   z-index: 1;
   font-size: 4rem;
   padding: 0 25px;
@@ -181,7 +181,7 @@ a.toggle {
 
 .homepage-hero h2 {
   text-transform: capitalize;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 10);
   z-index: 1;
   font-size: 1.8rem;
   padding-top: 13px;
@@ -194,6 +194,14 @@ a.toggle {
   z-index: 1;
   margin-top: 17px;
   margin-left: 8px;
+  background-color: #163b30;
+  border: 2px solid #112f26;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.homepage-hero a.button:hover {
+    transform: translateY(-10px);
+    background-color: #0e281f;
 }
 
 .homepage-hero a {
@@ -230,6 +238,12 @@ a.toggle {
   font-size: 1.4rem ;
   padding: 12px 20px;
   background-color: #c5954a;
+  border: 2px solid #a88040;
+  transition: background-color 0.3s ease;
+}
+
+.content-container a.button:hover {
+  background-color: #906e36;
 }
 
 /*---- CALL-TO-ACTION ----*/
@@ -254,10 +268,16 @@ a.toggle {
 
 .action-container a.button {
   background-color: #163b30;
+  border: 2px solid #112f26;
   border-radius: 4px;
   font-size: 1.3rem ;
   margin-top: 25px;
   padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.action-container a.button:hover {
+  background-color: #0e281f;
 }
 
 /*---- COMMUNITY AND EVENTS ----*/
@@ -286,7 +306,13 @@ a.toggle {
   display: inline-block;
   font-size: 1.3rem;
   background-color: #c5954a;
+  border: 2px solid #a88040;
   padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.community-events a.button:hover {
+  background-color: #906e36;
 }
 
 .community-events img {
@@ -380,7 +406,7 @@ a.toggle {
   text-transform: capitalize;
   font-size: 3rem;
   line-height: 3.5rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 10);
   text-align: center;
   margin-bottom: 11px;
   padding-right: 17px;
@@ -390,7 +416,7 @@ a.toggle {
   color: #ffffff;
   font-size: 1.5rem;
   line-height: 1.5rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 10);
   width: 100%;
   margin-right: 13px;
 }
@@ -399,6 +425,14 @@ a.toggle {
   font-size: 1.3rem ;
   padding: 10px 20px;
   margin: 15px 0 21px 0;
+  background-color: #163b30;
+  border: 2px solid #112f26;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.produce-hero a.button:hover {
+    transform: translateY(-10px);
+    background-color: #0e281f;
 }
 
 /*--- PRODUCT SELECTION ---*/
@@ -509,7 +543,13 @@ td {
   padding: 10px 29px 10px 34px;
   color: #ffffff;
   background-color: #c5954a;
+  border: 2px solid #a88040;
   border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.benefits a.button:hover {
+  background-color: #906e36;
 }
 
 .benefits img {
@@ -536,12 +576,14 @@ td {
   text-transform: capitalize;
   margin-top: 10px;
   padding: 0 43px 0 49px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 10);
 }
 
 .contact-hero p {
   font-size: 1.5rem;
   margin-top: 29px;
   padding: 0 43px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 10);
 }
 
 /*--- CONTACT FORM ---*/
@@ -551,6 +593,7 @@ td {
   padding: 20px;
   border-radius: 4px;
   background-color: #163b30;
+  border: 2px solid #112f26;
 }
 
 .contact-form h2 {
@@ -590,6 +633,12 @@ td {
   border: solid 2px #6b5128;
   border-radius: 4px;
   margin-left: 124px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  transform: translateY(-10px);
+  background-color: #906e36;
 }
 
 /*--- FARM LOCATION ---*/
@@ -634,11 +683,11 @@ td {
 /*-------- HEADER ---------*/
 
 .header-container {
-  height: 20vh;
+  height: 15vh;
 }
 
 .header-container img {
-  width: 100px;
+  width: 85px;
 }
 
 .header-container nav .toggle {
@@ -773,8 +822,10 @@ position: static;
   margin: 60px 40px 24px 0;
 }
 
-/*-------- FOOTER ---------*/
-
+.footer-container ul li a img {
+  width: 30px;
+  height: 30px;
+}
 
 /*------------------------------------- PRODUCE PAGE --------------------------------*/
 
@@ -831,6 +882,11 @@ td {
 .notice p {
   font-size: 2.2rem;
   margin-bottom: 20px;
+}
+
+.notice a {
+  text-decoration: underline;
+  color: #2E2E2E;
 }
 
 /*-------- BENEFITS ---------*/
