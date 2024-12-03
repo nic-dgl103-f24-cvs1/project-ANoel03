@@ -107,7 +107,7 @@ h2, h3, h4{
 .header-container nav ul {
   display: none;
   list-style-type: none;
-  margin: 0;
+  margin-top: 12px;
   padding: 60px 0;
   width: 100%;
   top: 100px;  
@@ -600,6 +600,7 @@ td {
 
 .farm-location h2 {
   color: #163b30;
+  text-align: center;
 }
 
 .farm-location p {
@@ -657,7 +658,7 @@ position: static;
   width: 100%;
   overflow: hidden;
   padding: 0;
-  margin: 0;
+  margin-top: 83px;
 }
 
 .homepage-hero video {
@@ -695,13 +696,18 @@ position: static;
 .about-container {
   display: flex;
   align-items: center;
-  padding: 50px 20px;
-  margin: 0;
+  padding: 0 20px;
+  margin-bottom: 110px;
   flex-direction: row;
 }
 
+.image-container img {
+  max-width: 900px;
+  margin-left: 20px;
+}
+
 .content-container {
-  padding: 20px;
+  margin-left: 50px;
 }
 
 .content-container h2 {
@@ -710,10 +716,11 @@ position: static;
 
 .content-container p {
   font-size: 2.2rem;
+  padding: 0 30px;
 }
 
 .content-container a.button {
-  padding: 12px 0 12px 55px;
+  padding: 12px 0;
   margin-top: 27px;
   width: 314px;
   font-size: 2rem;
@@ -721,7 +728,50 @@ position: static;
 
 /*-------- CALL-TO-ACTION ---------*/
 
+.action-container h2 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.action-container p {
+  font-size: 2.2rem;
+  padding: 0 20px;
+}
+
+.action-container a.button {
+  font-size: 2rem;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  padding: 12px 25px;
+}
+
 /*-------- COMMUNITY EVENTS ---------*/
+
+.community-events {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.community-events h2 {
+  font-size: 4rem;
+  margin-top: 45px;
+}
+
+.community-events p {
+  font-size: 2.2rem;
+}
+
+.community-events a.button {
+  font-size: 2rem;
+  padding: 12px 25px;
+  margin-top: 20px;
+}
+
+.community-events img {
+  max-width: 600px;
+  margin: 60px 40px 24px 0;
+}
 
 /*-------- FOOTER ---------*/
 
@@ -811,7 +861,7 @@ td {
 
 .benefits .button {
   font-size: 2rem;
-  margin: 20px 141px 0 113px;
+  margin: 20px 150px;
   padding: 15px;
   justify-content: center;
 }
@@ -820,7 +870,7 @@ td {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
-  padding-top: 170px; 
+  padding-top: 150px; 
   padding-right: 40px;
 }
 
@@ -849,26 +899,18 @@ td {
 .contact-hero p {
   font-size: 2.2rem;
   margin-top: 50px;
-  padding-left: 0 260px;
-}
-
-.community-events {
- display: flex;
- padding: 20px;
-}
-
-.community-events div {
-  width: 50%;
-}
-
-.community-events img {
-  width: 50%;
+  max-width: 700px;
+  margin-left: 306px;
 }
 
 /*-------- CONTACT FORM ---------*/
 
 .contact-form h2 {
   font-size: 4rem;
+}
+
+.contact-heading {
+  margin-top: 20px;
 }
 
 .contact-form-container {
@@ -879,7 +921,7 @@ td {
   width: 990px;
   margin-left: 230px;
   border-radius: 4px;
-  margin-bottom: 25px;
+  margin-bottom: 45px;
 }
 
 .contact-form img {
